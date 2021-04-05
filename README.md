@@ -1,4 +1,4 @@
-# TFHT01 ThunderFly Huminidity and Temperature sensor
+# TFHT01 ThunderFly Humidity and Temperature sensor
 
 Sensor could be directly connected to Pixhawk autopilot with PX4 firmware, or could be used as a sensor of [TF-ATMON monitoring system](https://www.thunderfly.cz/tf-atmon.html). 
 
