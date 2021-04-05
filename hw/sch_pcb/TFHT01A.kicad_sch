@@ -3,10 +3,10 @@
   (paper "A4")
 
   (title_block
-    (title "TFI2CEXT01A")
-    (date "2021-01-23")
+    (title "TFHT01A")
+    (date "2021-04-05")
     (company "ThunderFly s.r.o.")
-    (comment 1 "I2C expander")
+    (comment 1 "Humidity and Temperature \\n sensor \\n ")
     (comment 2 "Jacho  <info@thunderfly.cz>")
   )
 
