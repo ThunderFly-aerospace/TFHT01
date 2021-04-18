@@ -1,6 +1,6 @@
 {
   "board": {
-    "active_layer": 44,
+    "active_layer": 48,
     "active_layer_preset": "Všechny vrstvy",
     "auto_track_width": true,
     "hidden_nets": [],
@@ -15,16 +15,16 @@
     "ratsnest_display_mode": 0,
     "selection_filter": {
       "dimensions": true,
-      "footprints": true,
+      "footprints": false,
       "graphics": true,
       "keepouts": true,
       "lockedItems": false,
       "otherItems": true,
-      "pads": true,
+      "pads": false,
       "text": true,
-      "tracks": true,
+      "tracks": false,
       "vias": true,
-      "zones": true
+      "zones": false
     },
     "visible_items": [
       0,
