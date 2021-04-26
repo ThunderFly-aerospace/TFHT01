@@ -98,7 +98,7 @@
 
   (footprint "MLAB_LOGA:TF 14x6,6" (layer "F.Cu")
     (tedit 60857F13) (tstamp 0013b571-70a3-4c9e-9d13-048225934f66)
-    (at 27.178 -7.5 90)
+    (at 27.1526 -7.3406 90)
     (attr board_only exclude_from_pos_files exclude_from_bom)
     (fp_text reference "G***" (at 0 0 90) (layer "F.SilkS") hide
       (effects (font (size 1.524 1.524) (thickness 0.3)))
@@ -2017,13 +2017,13 @@
   )
 
   (gr_rect (start 0 -15) (end 30 0) (layer "Edge.Cuts") (width 0.15) (fill none) (tstamp 735d4ff8-5baa-4f6b-84bf-3475887cc2ef))
-  (gr_text "PWR" (at 6.5 -10.5) (layer "F.SilkS") (tstamp 195894d4-520f-419f-a946-8f0b7a6f043c)
+  (gr_text "PWR" (at 6.2992 -10.5156) (layer "F.SilkS") (tstamp 195894d4-520f-419f-a946-8f0b7a6f043c)
     (effects (font (size 1.5 1.5) (thickness 0.3)) (justify left))
   )
-  (gr_text "TFHT01A" (at 20.955 -7.5 90) (layer "F.SilkS") (tstamp 35d4c30d-f850-471e-9520-a4e9529ff945)
+  (gr_text "TFHT01A" (at 17.78 -7.3152 90) (layer "F.SilkS") (tstamp 35d4c30d-f850-471e-9520-a4e9529ff945)
     (effects (font (size 1.5 1.5) (thickness 0.3)))
   )
-  (gr_text "ALERT" (at 6.5 -4.5) (layer "F.SilkS") (tstamp 6fa61ddc-ec1d-4697-bd39-631c934f8df7)
+  (gr_text "ALERT" (at 5.8928 -4.6482) (layer "F.SilkS") (tstamp 6fa61ddc-ec1d-4697-bd39-631c934f8df7)
     (effects (font (size 1.5 1.5) (thickness 0.3)) (justify left))
   )
 
