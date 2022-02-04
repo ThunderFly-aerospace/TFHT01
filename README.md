@@ -29,4 +29,6 @@ Sensor mounted on UAV can be used for a variety of use. It can be used to measur
 ## PX4 
 The sensor is currently supported by the PX4 autopilot. Multiple sensors can be connected to one autopilot. The measured data are immediately sent to the ground station and they are also logged in the onboard ulog file.
 
+
+## Availability
 The device can be purchased from [ThunderFly s.r.o.](https://www.thunderfly.cz/). Contact us by email info@thunderfly.cz for a commercial quotation.
