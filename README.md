@@ -22,7 +22,7 @@ Sensor mounted on UAV can be used for a variety of use. It can be used to measur
 | Operational humidity | 0-100 % | At humidity above 80% the performance of the sensor could be degraded in case of prolonged time periods |
 | Operational input voltage | 3.6 - 5.4V | Overvoltage internally protected by zener diode |
 | Mass | 2 g | PCB without cabling |
-| Dimensions |  |  PCB |
+| Dimensions | 30 x 15 x 6.5 mm |  PCB |
 | Weather resistance | IP40 | External connectors fully occupied. The sensor itself is protected by IP67 according the [sensirion datasheet](https://www.sensirion.com/fileadmin/user_upload/customers/sensirion/Dokumente/2_Humidity_Sensors/Datasheets/Sensirion_Humidity_Sensors_SHT3x_Datasheet_Filter_Membrane.pdf) |
 
 
