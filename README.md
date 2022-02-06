@@ -4,8 +4,7 @@ Sensor could be directly connected to Pixhawk autopilot with PX4 firmware, or co
 
 Sensor mounted on UAV can be used for a variety of use. It can be used to measure atmospheric temperature and humidity, which can be used to estimate whether icing may form on aerodynamic surfaces. Or to determinate if the flight is conducted within the operating range of the drone.Another use can be to measure the temperature of selected UAV components. For example temperature of batteries, ESC, motor or some bearings. 
 
-![TFHT01A top view](/doc/img/TFHT01A_top.png)
-![TFHT01A bottom view](/doc/img/TFHT01A_bot.png)
+![TFHT01A top view](/doc/img/TFHT01A2.jpg)
 
 ## Parameters
 
