@@ -1,0 +1,7 @@
+### Module positions - created on Po 14. března 2022, 00:43:36 ###
+### Printed by Pcbnew version 6.0.2-378541a8eb~116~ubuntu20.04.1
+## Unit = mm, Angle = deg.
+## Side : top
+# Ref     Val           Package                                               PosX       PosY       Rot  Side
+J2        SM04B-GHS-TB  JST_GH_SM04B-GHS-TB_1x04-1MP_P1.25mm_Horizontal  -123.9460   144.4060  -90.0000  top
+## End

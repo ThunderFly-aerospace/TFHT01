@@ -1562,7 +1562,7 @@
       (effects (font (size 1 1) (thickness 0.15)) (justify mirror))
       (tstamp 096bc04d-a13f-4149-9d1b-9614a236c1b9)
     )
-    (fp_text value "100R" (at 0 -1.43) (layer "B.Fab") hide
+    (fp_text value "10k" (at 0 -1.43) (layer "B.Fab") hide
       (effects (font (size 1 1) (thickness 0.15)) (justify mirror))
       (tstamp 3e955887-14da-4155-88da-b6cae90b53e1)
     )

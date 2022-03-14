@@ -5,11 +5,11 @@
   (paper "A4")
 
   (title_block
-    (title "TFHT01A")
+    (title "TFHT01B")
     (date "2021-04-05")
     (company "ThunderFly s.r.o.")
     (comment 1 "Humidity and Temperature \\n sensor \\n ")
-    (comment 2 "Jacho  <info@thunderfly.cz>")
+    (comment 2 "kaklik  <info@thunderfly.cz>")
   )
 
   (lib_symbols
@@ -1268,10 +1268,10 @@
   (symbol (lib_id "Device:R") (at 147.32 87.63 0) (unit 1)
     (in_bom yes) (on_board yes)
     (uuid 00000000-0000-0000-0000-000059ffb1aa)
-    (property "Reference" "R10" (id 0) (at 149.098 86.462 0)
+    (property "Reference" "R10" (id 0) (at 141.605 86.36 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Value" "10k" (id 1) (at 149.098 88.773 0)
+    (property "Value" "10k" (id 1) (at 141.605 88.9 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Footprint" "Mlab_R:SMD-0603" (id 2) (at 145.542 87.63 90)
@@ -1768,7 +1768,7 @@
     (property "Reference" "R2" (id 0) (at 257.0491 148.0819 90)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Value" "100R" (id 1) (at 256.8078 141.7319 90)
+    (property "Value" "10k" (id 1) (at 256.8077 141.7319 90)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Footprint" "Mlab_R:SMD-0603" (id 2) (at 255.27 146.558 90)
@@ -2209,7 +2209,7 @@
       (reference "R1") (unit 1) (value "180R") (footprint "Mlab_R:SMD-0603")
     )
     (path "/5ca4b185-b50a-4c7e-b3f2-4d48fda4441d"
-      (reference "R2") (unit 1) (value "100R") (footprint "Mlab_R:SMD-0603")
+      (reference "R2") (unit 1) (value "10k") (footprint "Mlab_R:SMD-0603")
     )
     (path "/00000000-0000-0000-0000-000059ffb143"
       (reference "R3") (unit 1) (value "10k") (footprint "Mlab_R:SMD-0603")
