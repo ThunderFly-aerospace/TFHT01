@@ -1702,7 +1702,7 @@
     (property "Value" "SHT31-DIS-B" (id 1) (at 125.73 89.2225 0)
       (effects (font (size 1.524 1.524)))
     )
-    (property "Footprint" "Mlab_IO:DFN-8-1EP_2.4x2.4mm_Pitch0.5mm" (id 2) (at 125.73 111.76 0)
+    (property "Footprint" "Sensor_Humidity:Sensirion_DFN-8-1EP_2.5x2.5mm_P0.5mm_EP1.1x1.7mm" (id 2) (at 125.73 111.76 0)
       (effects (font (size 1.524 1.524)) hide)
     )
     (property "Datasheet" "https://sensirion.com/media/documents/213E6A3B/61641DC3/Sensirion_Humidity_Sensors_SHT3x_Datasheet_digital.pdf" (id 3) (at 125.73 111.76 0)
@@ -2197,7 +2197,7 @@
       (reference "R10") (unit 1) (value "10k") (footprint "Mlab_R:SMD-0603")
     )
     (path "/4cb0c876-b8d5-4362-91e0-398fcabb2f25"
-      (reference "U1") (unit 1) (value "SHT31-DIS-B") (footprint "Mlab_IO:DFN-8-1EP_2.4x2.4mm_Pitch0.5mm")
+      (reference "U1") (unit 1) (value "SHT31-DIS-B") (footprint "Sensor_Humidity:Sensirion_DFN-8-1EP_2.5x2.5mm_P0.5mm_EP1.1x1.7mm")
     )
     (path "/00000000-0000-0000-0000-00005de928cf"
       (reference "U3") (unit 1) (value "MIC5504-3.3YM5") (footprint "Package_TO_SOT_SMD:SOT-23-5")
