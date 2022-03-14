@@ -388,7 +388,7 @@
       "vmrl": "",
       "vrml": ""
     },
-    "page_layout_descr_file": ""
+    "page_layout_descr_file": "../../doc/assets/templates/KiCAD/page_layout.kicad_wks"
   },
   "schematic": {
     "annotate_start_num": 0,
