@@ -1,0 +1,224 @@
+name: Kicad
+
+on:
+  workflow_dispatch:
+  
+env:
+  schema: "hw/sch_pcb/*.kicad_sch"
+  board: "hw/sch_pcb/*.kicad_pcb"
+  dir: "hw/out"
+  kibot: "doc/assets/kibot"
+
+jobs:
+  UPDATE_ASSETS:
+    runs-on: ubuntu-latest
+    name: Update submodule.
+    steps:
+    - uses: actions/checkout@v3
+      with:
+       submodules: recursive
+       token: ${{ secrets.pat }}
+       fetch-depth: 0
+
+    - name: Get latest version
+      run: |
+        git submodule update --remote 
+    - uses: stefanzweifel/git-auto-commit-action@v4
+      with:
+        commit_message: Update submodule to latest
+
+# checks
+  ERC:
+    needs: [UPDATE_ASSETS]
+    runs-on: ubuntu-latest
+    continue-on-error: true
+    steps:
+      - uses: actions/checkout@v3
+        with:
+          submodules: recursive
+          token: ${{ secrets.pat }}
+          fetch-depth: 0
+          
+      - uses: INTI-CMNB/KiBot@master
+        with:
+          config: ${{ env.kibot }}/erc.kibot.yaml
+          schema: ${{ env.schema }}
+          board: ${{ env.board }}
+          dir: ${{ env.dir }}
+          
+  DRC:
+    runs-on: ubuntu-latest
+    needs: [UPDATE_ASSETS]
+    continue-on-error: true
+    steps:
+      - uses: actions/checkout@v3
+        with:
+          submodules: recursive
+          token: ${{ secrets.pat }}
+          
+      - uses: INTI-CMNB/KiBot@master
+        with:
+          config: ${{ env.kibot }}/drc.kibot.yaml
+          schema: ${{ env.schema }}
+          board: ${{ env.board }}
+          dir: ${{ env.dir }}
+          
+# documentation
+  docs:
+    runs-on: ubuntu-latest
+    #needs: [ERC]
+    steps:
+      - uses: actions/checkout@v3
+        with:
+          submodules: recursive
+          token: ${{ secrets.pat }}
+          fetch-depth: 0
+          
+      - uses: INTI-CMNB/KiBot@master
+        with:
+          config: ${{ env.kibot }}/docs.kibot.yaml
+          schema: ${{ env.schema }}
+          board: ${{ env.board }}
+          dir: ${{ env.dir }}_docs
+      - uses: actions/upload-artifact@v2
+        if: ${{ success() }}
+        with:
+          name: ${{ github.event.repository.name }}_docs
+          path: ${{ env.dir }}_docs/**
+      
+      
+      - uses: stefanzweifel/git-auto-commit-action@v4
+        with:
+          commit_message: Automated Change
+          commit_options: '--no-verify --signoff'
+          file_pattern: .
+          repository: .
+          add_options: '-u'
+          push_options: '--force'
+          skip_dirty_check: false
+          skip_fetch: false
+          skip_checkout: false
+          create_branch: true
+          
+#       - uses: EndBug/add-and-commit@v9
+#         with:
+#           pull: '--rebase --autostash'
+#           push: true
+#           #push-options: '--force'
+#           file_pattern: ${{ env.dir }}_docs/**
+          
+
+#       - uses: stefanzweifel/git-auto-commit-action@v4
+#         with:
+#           commit_message: DOC
+          
+# fabrications
+  gerbers:
+    runs-on: ubuntu-latest
+    #needs: [DRC]
+    steps:
+      - uses: actions/checkout@v3
+        with:
+          submodules: recursive
+          token: ${{ secrets.pat }}
+          fetch-depth: 0
+          
+      - uses: INTI-CMNB/KiBot@master          
+        with:
+          config: ${{ env.kibot }}/gerbers.kibot.yaml
+          schema: ${{ env.schema }}
+          board: ${{ env.board }}
+          dir: ${{ env.dir }}_gerbers
+      - uses: actions/upload-artifact@v2
+        if: ${{ success() }}
+        with:
+          name: ${{ github.event.repository.name }}_gerbers
+          path: ${{ env.dir }}_gerbers/gerbers/**
+          
+      - uses: stefanzweifel/git-auto-commit-action@v4
+        with:
+          commit_message: Automated Change
+          commit_options: '--no-verify --signoff'
+          file_pattern: .
+          repository: .
+          add_options: '-u'
+          push_options: '--force'
+          skip_dirty_check: false
+          skip_fetch: false
+          skip_checkout: false
+          create_branch: true
+          
+# cad
+  cad:
+    runs-on: ubuntu-latest
+    #needs: [DRC]
+    steps:
+      - uses: actions/checkout@v3
+        with:
+          submodules: recursive
+          token: ${{ secrets.pat }}
+          fetch-depth: 0
+          
+      - uses: INTI-CMNB/KiBot@master
+        with:
+          config: ${{ env.kibot }}/cad.kibot.yaml
+          schema: ${{ env.schema }}
+          board: ${{ env.board }}
+          dir: ${{ env.dir }}_cad
+      - uses: actions/upload-artifact@v2
+        if: ${{ success() }}
+        with:
+          name: ${{ github.event.repository.name }}_cad
+          path: ${{ env.dir }}_cad/**
+          
+      
+      - uses: stefanzweifel/git-auto-commit-action@v4
+        with:
+          commit_message: Automated Change
+          commit_options: '--no-verify --signoff'
+          file_pattern: .
+          repository: .
+          add_options: '-u'
+          push_options: '--force'
+          skip_dirty_check: false
+          skip_fetch: false
+          skip_checkout: false
+          create_branch: true
+          
+# render
+  render:
+    runs-on: ubuntu-latest
+    #needs: [DRC]
+    steps:
+      - uses: actions/checkout@v3
+        with:
+          submodules: recursive
+          token: ${{ secrets.pat }}
+          fetch-depth: 0
+          
+      - uses: INTI-CMNB/KiBot@master
+        with:
+          config: ${{ env.kibot }}/render.kibot.yaml
+          schema: ${{ env.schema }}
+          board: ${{ env.board }}
+          dir: ${{ env.dir }}_img
+          
+      - uses: actions/upload-artifact@v2
+        if: ${{ success() }}
+        with:
+          name: ${{ github.event.repository.name }}_img
+          path: ${{ env.dir }}_img/img/**
+
+      
+      - uses: stefanzweifel/git-auto-commit-action@v4
+        with:
+          commit_message: Automated Change
+          commit_options: '--no-verify --signoff'
+          file_pattern: .
+          repository: .
+          add_options: '-u'
+          push_options: '--force'
+          skip_dirty_check: false
+          skip_fetch: false
+          skip_checkout: false
+          create_branch: true
