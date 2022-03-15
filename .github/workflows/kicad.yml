@@ -135,10 +135,12 @@ jobs:
           name: ${{ github.event.repository.name }}_gerbers
           path: ${{ env.dir }}_gerbers/gerbers/**
           
+      - run: |
+          git pull --rebase
       - uses: stefanzweifel/git-auto-commit-action@v4
         with:
-          commit_message: Automated Change
-          commit_options: '--no-verify --signoff'
+          commit_message: Gerber Change
+          commit_options: '--no-verify --signoff --ammend'
           file_pattern: .
           repository: .
           add_options: '-u'
@@ -171,14 +173,14 @@ jobs:
           name: ${{ github.event.repository.name }}_cad
           path: ${{ env.dir }}_cad/**
           
-      
+      - run: |
+          git pull --rebase
       - uses: stefanzweifel/git-auto-commit-action@v4
         with:
-          commit_message: Automated Change
-          commit_options: '--no-verify --signoff'
+          commit_message: CAD Change
+          commit_options: '--no-verify --signoff --ammend'
           file_pattern: .
-          repository: .
-          add_options: '-u'
+          add_options: ''
           push_options: '--force'
           skip_dirty_check: false
           skip_fetch: false
@@ -210,10 +212,12 @@ jobs:
           path: ${{ env.dir }}_img/img/**
 
       
+      - run: |
+          git pull --rebase
       - uses: stefanzweifel/git-auto-commit-action@v4
         with:
-          commit_message: Automated Change
-          commit_options: '--no-verify --signoff'
+          commit_message: render Change
+          commit_options: '--no-verify --signoff --ammend'
           file_pattern: .
           repository: .
           add_options: '-u'
