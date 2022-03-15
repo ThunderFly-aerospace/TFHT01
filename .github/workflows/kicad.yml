@@ -28,45 +28,46 @@ jobs:
         commit_message: Update submodule to latest
 
 # checks
-  ERC:
-    needs: [UPDATE_ASSETS]
-    runs-on: ubuntu-latest
-    continue-on-error: true
-    steps:
-      - uses: actions/checkout@v3
-        with:
-          submodules: recursive
-          token: ${{ secrets.pat }}
-          fetch-depth: 0
+#   ERC:
+#     needs: [UPDATE_ASSETS]
+#     runs-on: ubuntu-latest
+#     continue-on-error: true
+#     steps:
+#       - uses: actions/checkout@v3
+#         with:
+#           submodules: recursive
+#           token: ${{ secrets.pat }}
+#           fetch-depth: 0
           
-      - uses: INTI-CMNB/KiBot@master
-        with:
-          config: ${{ env.kibot }}/erc.kibot.yaml
-          schema: ${{ env.schema }}
-          board: ${{ env.board }}
-          dir: ${{ env.dir }}
+#       - uses: INTI-CMNB/KiBot@master
+#         with:
+#           config: ${{ env.kibot }}/erc.kibot.yaml
+#           schema: ${{ env.schema }}
+#           board: ${{ env.board }}
+#           dir: ${{ env.dir }}
           
-  DRC:
-    runs-on: ubuntu-latest
-    needs: [UPDATE_ASSETS]
-    continue-on-error: true
-    steps:
-      - uses: actions/checkout@v3
-        with:
-          submodules: recursive
-          token: ${{ secrets.pat }}
+#   DRC:
+#     runs-on: ubuntu-latest
+#     needs: [UPDATE_ASSETS]
+#     continue-on-error: true
+#     steps:
+#       - uses: actions/checkout@v3
+#         with:
+#           submodules: recursive
+#           token: ${{ secrets.pat }}
           
-      - uses: INTI-CMNB/KiBot@master
-        with:
-          config: ${{ env.kibot }}/drc.kibot.yaml
-          schema: ${{ env.schema }}
-          board: ${{ env.board }}
-          dir: ${{ env.dir }}
+#       - uses: INTI-CMNB/KiBot@master
+#         with:
+#           config: ${{ env.kibot }}/drc.kibot.yaml
+#           schema: ${{ env.schema }}
+#           board: ${{ env.board }}
+#           dir: ${{ env.dir }}
           
 # documentation
   docs:
     runs-on: ubuntu-latest
     #needs: [ERC]
+    needs: [UPDATE_ASSETS]
     steps:
       - uses: actions/checkout@v3
         with:
@@ -116,6 +117,7 @@ jobs:
   gerbers:
     runs-on: ubuntu-latest
     #needs: [DRC]
+    needs: [UPDATE_ASSETS]
     steps:
       - uses: actions/checkout@v3
         with:
@@ -154,6 +156,7 @@ jobs:
   cad:
     runs-on: ubuntu-latest
     #needs: [DRC]
+    needs: [UPDATE_ASSETS]
     steps:
       - uses: actions/checkout@v3
         with:
@@ -191,6 +194,7 @@ jobs:
   render:
     runs-on: ubuntu-latest
     #needs: [DRC]
+    needs: [UPDATE_ASSETS]
     steps:
       - uses: actions/checkout@v3
         with:
