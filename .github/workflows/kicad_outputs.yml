@@ -1,0 +1,238 @@
+name: Kicad
+
+on:
+  workflow_dispatch:
+  push:
+  
+env:
+  schema: "hw/sch_pcb/*.kicad_sch"
+  board: "hw/sch_pcb/*.kicad_pcb"
+  dir: "hw/out"
+  kibot: "doc/assets/kibot"
+
+jobs:
+  UPDATE_ASSETS:
+    runs-on: ubuntu-latest
+    name: Update submodule.
+    steps:
+    - uses: actions/checkout@v3
+      with:
+       submodules: recursive
+       token: ${{ secrets.pat }}
+       fetch-depth: 1
+
+    - name: Get latest version
+      run: |
+        git submodule update --remote
+
+    - uses: actions/checkout@v3
+      with:
+       token: ${{ github.token }}
+       fetch-depth: 1
+        
+    - uses: stefanzweifel/git-auto-commit-action@v4
+      with:
+        commit_message: Update submodule to latest
+
+# checks
+  ERC:
+    needs: [UPDATE_ASSETS]
+    runs-on: ubuntu-latest
+    continue-on-error: true
+    steps:
+      - uses: actions/checkout@v3
+        with:
+          submodules: recursive
+          token: ${{ secrets.pat }}
+          ref: ${{ github.head_ref }}
+          
+      - uses: INTI-CMNB/KiBot@v1_k6
+        with:
+          config: ${{ env.kibot }}/erc.kibot.yaml
+          schema: ${{ env.schema }}
+          board: ${{ env.board }}
+          dir: ${{ env.dir }}
+          
+  DRC:
+    runs-on: ubuntu-latest
+    needs: [UPDATE_ASSETS]
+    continue-on-error: true
+    steps:
+      - uses: actions/checkout@v3
+        with:
+          submodules: recursive
+          token: ${{ secrets.pat }}
+          ref: ${{ github.head_ref }}
+          
+      - uses: INTI-CMNB/KiBot@v1_k6
+        with:
+          config: ${{ env.kibot }}/drc.kibot.yaml
+          schema: ${{ env.schema }}
+          board: ${{ env.board }}
+          dir: ${{ env.dir }}
+          
+# documentation
+  schematics:
+    runs-on: ubuntu-latest
+    needs: [ERC]
+    #neds: [UPDATE_ASSETS]
+    steps:
+      - uses: actions/checkout@v3
+        with:
+          submodules: recursive
+          token: ${{ secrets.pat }}
+          ref: ${{ github.head_ref }}
+          
+      - uses: INTI-CMNB/KiBot@v1_k6
+        with:
+          config: ${{ env.kibot }}/schematics.kibot.yaml
+          schema: ${{ env.schema }}
+          board: ${{ env.board }}
+          dir: ${{ env.dir }}_docs
+      - uses: actions/upload-artifact@v2
+        if: ${{ success() }}
+        with:
+          name: doc_sch
+          path: ${{ env.dir }}_docs/**
+          
+          
+#   placement:
+#     runs-on: ubuntu-latest
+#     needs: [ERC]
+#     #neds: [UPDATE_ASSETS]
+#     continue-on-error: true
+#     steps:
+#       - uses: actions/checkout@v3
+#         with:
+#           submodules: recursive
+#           token: ${{ secrets.pat }}
+#          ref: ${{ github.head_ref }}
+          
+#       - uses: INTI-CMNB/KiBot@v1_k6
+#         with:
+#           config: ${{ env.kibot }}/placement.kibot.yaml
+#           schema: ${{ env.schema }}
+#           board: ${{ env.board }}
+#           dir: ${{ env.dir }}_docs
+#       - uses: actions/upload-artifact@v2
+#         if: ${{ success() }}
+#         with:
+#           name: doc_place
+#           path: ${{ env.dir }}_docs/**
+      
+# fabrications
+  gerbers:
+    runs-on: ubuntu-latest
+    needs: [DRC]
+    #eeds: [UPDATE_ASSETS]
+    continue-on-error: true
+    steps:
+      - uses: actions/checkout@v3
+        with:
+          submodules: recursive
+          token: ${{ secrets.pat }}
+          ref: ${{ github.head_ref }}
+          
+      - uses: INTI-CMNB/KiBot@v1_k6          
+        with:
+          config: ${{ env.kibot }}/gerbers.kibot.yaml
+          schema: ${{ env.schema }}
+          board: ${{ env.board }}
+          dir: ${{ env.dir }}_gerbers
+          
+      - uses: actions/upload-artifact@v2
+        if: ${{ success() }}
+        with:
+          name: hw_cam_profi
+          path: ${{ env.dir }}_gerbers/gerbers/**
+
+
+  cad:
+    runs-on: ubuntu-latest
+    needs: [DRC]
+    #needs: [UPDATE_ASSETS]
+    continue-on-error: true
+    steps:
+      - uses: actions/checkout@v3
+        with:
+          submodules: recursive
+          token: ${{ secrets.pat }}
+          ref: ${{ github.head_ref }}
+          
+      - uses: INTI-CMNB/KiBot@v1_k6
+        with:
+          config: ${{ env.kibot }}/cad.kibot.yaml
+          schema: ${{ env.schema }}
+          board: ${{ env.board }}
+          dir: ${{ env.dir }}_cad
+      - uses: actions/upload-artifact@v2
+        if: ${{ success() }}
+        with:
+          name: doc_cad
+          path: ${{ env.dir }}_cad/**
+
+
+  render:
+    runs-on: ubuntu-latest
+    needs: [DRC]
+    #needs: [UPDATE_ASSETS]
+    continue-on-error: true
+    steps:
+      - uses: actions/checkout@v3
+        with:
+          submodules: recursive
+          token: ${{ secrets.pat }}
+          ref: ${{ github.head_ref }}
+          
+      - uses: INTI-CMNB/KiBot@v1_k6
+        with:
+          config: ${{ env.kibot }}/render.kibot.yaml
+          schema: ${{ env.schema }}
+          board: ${{ env.board }}
+          dir: ${{ env.dir }}_img
+          
+      - uses: actions/upload-artifact@v2
+        if: ${{ success() }}
+        with:
+          name: doc_img
+          path: ${{ env.dir }}_img/img/**
+
+  UPDATE_REPO:
+    runs-on: ubuntu-latest
+    name: Update repozitory.
+    needs: [render, cad, gerbers, schematics]
+    steps:
+    - uses: actions/checkout@v3
+      with:
+        ref: ${{ github.head_ref }}
+
+    - name: Download a Build Artifact
+      uses: actions/download-artifact@v3.0.0
+    
+    - name: Remove old manufarturing data
+      run: rm -r hw/cam_profi || true
+    
+    - name: Extract to right position
+      run: |
+        mkdir doc || true
+        mkdir doc/img || true
+        #mkdir doc/img/render || true
+        mkdir hw || true
+        mkdir hw/cam_profi || true
+        
+        cp -r doc_img/* doc/img || true
+        cp -r doc_cad/cad/* doc || true
+        cp -r hw_cam_profi/* hw/cam_profi || true
+        cp -r doc_sch/docs/* doc || true
+        cp -r doc_sch/img/pcb/* doc/img || true
+        cp -r doc_placement/* doc || true
+        
+        rm -r doc_img || true
+        rm -r doc_cad || true
+        rm -r hw_cam_profi || true
+        rm -r doc_sch || true
+        rm -r doc_placement || true
+      
+    - uses: stefanzweifel/git-auto-commit-action@v4
+      with:
+        commit_message: Push actions product
