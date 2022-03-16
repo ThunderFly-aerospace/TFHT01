@@ -20,6 +20,12 @@ Sensor mounted on UAV can be used for a variety of use. It can be used to measur
 | Dimensions | 30 x 15 x 6.5 mm |  PCB |
 | Weather resistance | IP40 | External connectors fully occupied. The sensor itself is protected by IP67 according the [sensirion datasheet](https://www.sensirion.com/fileadmin/user_upload/customers/sensirion/Dokumente/2_Humidity_Sensors/Datasheets/Sensirion_Humidity_Sensors_SHT3x_Datasheet_Filter_Membrane.pdf) |
 
+
+## Schematics
+
+![Schematics](/doc/TFHT01B-schematic.svg)
+
+
 ## PX4 
 The sensor is currently supported by the PX4 autopilot. Multiple sensors can be connected to one autopilot. The measured data are immediately sent to the ground station and they are also logged in the onboard ulog file. Sensor support can be enabled by setting the [SENS_EN_SHT3X](http://docs.px4.io/master/en/advanced_config/parameter_reference.html#SENS_EN_SHT3X) parameter to 1. 
 
