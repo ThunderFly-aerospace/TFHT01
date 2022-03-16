@@ -1,5 +1,7 @@
 # TFHT01 ThunderFly Humidity and Temperature sensor
 
+[![Kicad](https://github.com/ThunderFly-aerospace/TFHT01/actions/workflows/kicad_outputs.yml/badge.svg?branch=TFHT01B)](https://github.com/ThunderFly-aerospace/TFHT01/actions/workflows/kicad_outputs.yml)
+
 Sensor could be directly connected to Pixhawk autopilot with PX4 firmware, or could be used as a sensor of [TF-ATMON monitoring system](https://www.thunderfly.cz/tf-atmon.html). 
 
 Sensor mounted on UAV can be used for a variety of use. It can be used to measure atmospheric temperature and humidity, which can be used to estimate whether icing may form on aerodynamic surfaces. Or to determinate if the flight is conducted within the operating range of the drone.Another use can be to measure the temperature of selected UAV components. For example temperature of batteries, ESC, motor or some bearings. 
