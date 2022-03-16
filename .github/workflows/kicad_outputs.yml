@@ -19,7 +19,7 @@ jobs:
       with:
        submodules: recursive
        token: ${{ secrets.pat }}
-       fetch-depth: 0
+       fetch-depth: 1
 
     - name: Get latest version
       run: |
@@ -28,7 +28,7 @@ jobs:
     - uses: actions/checkout@v3
       with:
        token: ${{ github.token }}
-       fetch-depth: 0
+       fetch-depth: 1
         
     - uses: stefanzweifel/git-auto-commit-action@v4
       with:
@@ -44,7 +44,7 @@ jobs:
         with:
           submodules: recursive
           token: ${{ secrets.pat }}
-          fetch-depth: 0
+          ref: ${{ github.head_ref }}
           
       - uses: INTI-CMNB/KiBot@v1_k6
         with:
@@ -62,6 +62,7 @@ jobs:
         with:
           submodules: recursive
           token: ${{ secrets.pat }}
+          ref: ${{ github.head_ref }}
           
       - uses: INTI-CMNB/KiBot@v1_k6
         with:
@@ -80,7 +81,7 @@ jobs:
         with:
           submodules: recursive
           token: ${{ secrets.pat }}
-          fetch-depth: 0
+          ref: ${{ github.head_ref }}
           
       - uses: INTI-CMNB/KiBot@v1_k6
         with:
@@ -105,7 +106,7 @@ jobs:
 #         with:
 #           submodules: recursive
 #           token: ${{ secrets.pat }}
-#           fetch-depth: 0
+#          ref: ${{ github.head_ref }}
           
 #       - uses: INTI-CMNB/KiBot@v1_k6
 #         with:
@@ -130,7 +131,7 @@ jobs:
         with:
           submodules: recursive
           token: ${{ secrets.pat }}
-          fetch-depth: 0
+          ref: ${{ github.head_ref }}
           
       - uses: INTI-CMNB/KiBot@v1_k6          
         with:
@@ -156,7 +157,7 @@ jobs:
         with:
           submodules: recursive
           token: ${{ secrets.pat }}
-          fetch-depth: 0
+          ref: ${{ github.head_ref }}
           
       - uses: INTI-CMNB/KiBot@v1_k6
         with:
@@ -181,7 +182,7 @@ jobs:
         with:
           submodules: recursive
           token: ${{ secrets.pat }}
-          fetch-depth: 0
+          ref: ${{ github.head_ref }}
           
       - uses: INTI-CMNB/KiBot@v1_k6
         with:
@@ -202,6 +203,8 @@ jobs:
     needs: [render, cad, gerbers, schematics]
     steps:
     - uses: actions/checkout@v3
+      with:
+        ref: ${{ github.head_ref }}
 
     - name: Download a Build Artifact
       uses: actions/download-artifact@v3.0.0
