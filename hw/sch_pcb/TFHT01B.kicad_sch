@@ -1019,7 +1019,6 @@
     )
   )
 
-
   (junction (at 43.18 168.91) (diameter 1.016) (color 0 0 0 0)
     (uuid 1a1ab354-5f85-45f9-938c-9f6c4c8c3ea2)
   )
@@ -1056,7 +1055,7 @@
 
   (no_connect (at 113.03 95.25) (uuid 3f3c4993-aab3-4a5a-8831-efda4687e5fb))
   (no_connect (at 252.73 20.32) (uuid 445ba9dc-2380-434a-8d88-62dca08c7c63))
-  (no_connect (at 257.81 20.32) (uuid 445ba9dc-2380-434a-8d88-62dca08c7c63))
+  (no_connect (at 257.81 20.32) (uuid 445ba9dc-2380-434a-8d88-62dca08c7c64))
   (no_connect (at 262.89 20.32) (uuid 728bbdb8-972d-43aa-ac6e-cc90ad02bd7f))
   (no_connect (at 267.97 20.32) (uuid 728bbdb8-972d-43aa-ac6e-cc90ad02bd80))
   (no_connect (at 273.05 20.32) (uuid 728bbdb8-972d-43aa-ac6e-cc90ad02bd81))
@@ -1789,10 +1788,10 @@
     (property "Reference" "M1" (id 0) (at 252.73 24.13 90)
       (effects (font (size 1.524 1.524)))
     )
-    (property "Value" "M3" (id 1) (at 250.19 20.32 0)
+    (property "Value" "" (id 1) (at 250.19 20.32 0)
       (effects (font (size 1.524 1.524)))
     )
-    (property "Footprint" "Mlab_Mechanical:dira_3mm" (id 2) (at 252.73 21.59 0)
+    (property "Footprint" "" (id 2) (at 252.73 21.59 0)
       (effects (font (size 1.524 1.524)) hide)
     )
     (property "Datasheet" "" (id 3) (at 252.73 21.59 0)
