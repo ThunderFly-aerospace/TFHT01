@@ -5,7 +5,7 @@
       "Application": "Pcbnew",
       "Version": "6.0.2+dfsg-1~bpo11+1"
     },
-    "CreationDate": "2022-03-16T18:02:24+00:00"
+    "CreationDate": "2022-03-18T18:50:32+00:00"
   },
   "GeneralSpecs": {
     "ProjectId": {
@@ -18,8 +18,8 @@
       "Y": 15.15
     },
     "LayerNumber": 2,
-    "BoardThickness": 1.6,
-    "Finish": "None"
+    "BoardThickness": 0.89,
+    "Finish": "HAL lead-free"
   },
   "DesignRules": [
     {
@@ -87,7 +87,7 @@
     },
     {
       "Type": "Dielectric",
-      "Thickness": 1.51,
+      "Thickness": 0.8,
       "Material": "FR4",
       "Name": "F.Cu/B.Cu",
       "Notes": "Type: dielectric layer 1 (from F.Cu to B.Cu)"
