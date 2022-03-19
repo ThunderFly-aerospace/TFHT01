@@ -1,5 +1,5 @@
 Drill report for TFHT01B.kicad_pcb
-Created on Sat Mar 19 19:20:55 2022
+Created on Sat Mar 19 22:32:07 2022
 
 Copper Layer Stackup:
     =============================================================
@@ -10,18 +10,18 @@ Copper Layer Stackup:
 Drill file 'TFHT01B-PTH.drl' contains
     plated through holes:
     =============================================================
-    T1  0.400mm  0.0157"  (32 holes)
+    T1  0.400mm  0.0157"  (33 holes)
 
-    Total plated holes count 32
+    Total plated holes count 33
 
 
 Drill file 'TFHT01B-NPTH.drl' contains
     unplated through holes:
     =============================================================
-    T1  1.000mm  0.0394"  (4 holes)
-    T2  1.200mm  0.0472"  (2 holes)
-    T3  2.000mm  0.0787"  (2 holes)
+    T1  1.000mm  0.0394"  (7 holes)
+    T2  1.200mm  0.0472"  (1 hole)
+    T3  2.000mm  0.0787"  (1 hole)
     T4  2.700mm  0.1063"  (2 holes)
     T5  3.000mm  0.1181"  (6 holes)
 
-    Total unplated holes count 16
+    Total unplated holes count 17
