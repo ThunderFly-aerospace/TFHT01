@@ -11,34 +11,33 @@ env:
   kibot: "doc/assets/kibot"
 
 jobs:
-  UPDATE_ASSETS:
-    runs-on: ubuntu-latest
-    name: Update submodule.
-    steps:
-    - uses: actions/checkout@v3
-      with:
-       submodules: recursive
-       token: ${{ secrets.pat }}
-       fetch-depth: 1
+#   UPDATE_ASSETS:
+#     runs-on: ubuntu-latest
+#     name: Update submodule.
+#     steps:
+#     - uses: actions/checkout@v3
+#       with:
+#        submodules: recursive
+#        token: ${{ secrets.pat }}
+#        fetch-depth: 1
 
-    - name: Get latest version
-      run: |
-        git submodule update --remote
-        cp -f doc/assets/workflow/kicad_outputs.yml .github/workflows/kicad_outputs.yml || true
+#     - name: Get latest version
+#       run: |
+#         git submodule update --remote
+#         cp -f doc/assets/workflow/kicad_outputs.yml .github/workflows/kicad_outputs.yml || true
 
-    - uses: actions/checkout@v3
-      with:
-       token: ${{ github.token }}
-       fetch-depth: 1
+#     - uses: actions/checkout@v3
+#       with:
+#        token: ${{ github.token }}
+#        fetch-depth: 1
         
-    - uses: stefanzweifel/git-auto-commit-action@v4
-      with:
-        commit_message: Update submodule and actions script to latest
-        skip_fetch: true
+#     - uses: stefanzweifel/git-auto-commit-action@v4
+#       with:
+#         commit_message: Update submodule and actions script to latest
+#         skip_fetch: true
 
 # checks
   ERC:
-    needs: [UPDATE_ASSETS]
     runs-on: ubuntu-latest
     continue-on-error: true
     steps:
@@ -57,7 +56,6 @@ jobs:
           
   DRC:
     runs-on: ubuntu-latest
-    needs: [UPDATE_ASSETS]
     continue-on-error: true
     steps:
       - uses: actions/checkout@v3
@@ -77,8 +75,6 @@ jobs:
   schematics:
     runs-on: ubuntu-latest
     continue-on-error: true
-    needs: [ERC]
-    #neds: [UPDATE_ASSETS]
     steps:
       - uses: actions/checkout@v3
         with:
@@ -102,7 +98,6 @@ jobs:
           
   placement:
     runs-on: ubuntu-latest
-    needs: [DRC]
     continue-on-error: true
     steps:
       - uses: actions/checkout@v3
@@ -128,8 +123,6 @@ jobs:
 # fabrications
   gerbers:
     runs-on: ubuntu-latest
-    needs: [DRC]
-    #eeds: [UPDATE_ASSETS]
     continue-on-error: true
     steps:
       - uses: actions/checkout@v3
@@ -155,8 +148,6 @@ jobs:
 
   cad:
     runs-on: ubuntu-latest
-    needs: [DRC]
-    #needs: [UPDATE_ASSETS]
     continue-on-error: true
     steps:
       - uses: actions/checkout@v3
@@ -181,8 +172,6 @@ jobs:
 
   render:
     runs-on: ubuntu-latest
-    needs: [DRC]
-    #needs: [UPDATE_ASSETS]
     continue-on-error: true
     steps:
       - uses: actions/checkout@v3
