@@ -199,7 +199,7 @@ jobs:
   UPDATE_REPO:
     runs-on: ubuntu-latest
     name: Update repozitory.
-    needs: [render, cad, gerbers, schematics, placement]
+    needs: [render, cad, gerbers, schematics, placement, pnp]
     steps:
     - uses: actions/checkout@v3
       with:
