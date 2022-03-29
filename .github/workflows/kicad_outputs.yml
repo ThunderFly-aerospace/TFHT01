@@ -68,7 +68,7 @@ jobs:
         if: ${{ success() }}
         with:
           name: doc_xml
-          path: /hw/sch_pcb/*.xml
+          path: hw/sch_pcb/*.xml
 
           
 # documentation
