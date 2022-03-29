@@ -25,7 +25,7 @@ Sensor mounted on UAV can be used for a variety of use. It can be used to measur
 
 ## Schematics
 
-![Schematics](/doc/TFHT01B-schematic.svg)
+[![Schematics](/doc/gen/TFHT01B-schematic.svg)](/doc/gen/TFHT01B-schematic.pdf)
 
 
 ## PX4 
