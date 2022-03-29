@@ -68,7 +68,7 @@ jobs:
         if: ${{ success() }}
         with:
           name: doc_xml
-          path: ${{ env.dir }}
+          path: .
 
           
 # documentation
