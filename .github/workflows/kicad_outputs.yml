@@ -11,30 +11,7 @@ env:
   kibot: "doc/assets/kibot"
 
 jobs:
-#   UPDATE_ASSETS:
-#     runs-on: ubuntu-latest
-#     name: Update submodule.
-#     steps:
-#     - uses: actions/checkout@v3
-#       with:
-#        submodules: recursive
-#        token: ${{ secrets.pat }}
-#        fetch-depth: 1
 
-#     - name: Get latest version
-#       run: |
-#         git submodule update --remote
-#         cp -f doc/assets/workflow/kicad_outputs.yml .github/workflows/kicad_outputs.yml || true
-
-#     - uses: actions/checkout@v3
-#       with:
-#        token: ${{ github.token }}
-#        fetch-depth: 1
-        
-#     - uses: stefanzweifel/git-auto-commit-action@v4
-#       with:
-#         commit_message: Update submodule and actions script to latest
-#         skip_fetch: true
 
 # checks
   ERC:
@@ -119,6 +96,31 @@ jobs:
         with:
           name: doc_placement
           path: ${{ env.dir }}_docs/**/*.pdf
+      
+          
+  pnp:
+    runs-on: ubuntu-latest
+    continue-on-error: true
+    steps:
+      - uses: actions/checkout@v3
+        with:
+          submodules: recursive
+          token: ${{ secrets.pat }}
+          ref: ${{ github.head_ref }}
+          
+      - uses: MLAB-project/KiBot@master
+        with:
+          config: ${{ env.kibot }}/pnp.kibot.yaml
+          schema: ${{ env.schema }}
+          board: ${{ env.board }}
+          dir: ${{ env.dir }}_docs
+        
+      # Zde se zahazuji debugovaci videa
+      - uses: actions/upload-artifact@v3
+        if: ${{ success() }}
+        with:
+          name: doc_pnp
+          path: ${{ env.dir }}_docs/
       
 # fabrications
   gerbers:
@@ -232,12 +234,14 @@ jobs:
         cp -r doc_sch/docs/* doc/gen || true
         cp -r doc_sch/img/pcb/* doc/gen/img || true
         cp -r doc_placement/* hw/cam_profi || true
+        cp -r doc_pnp/* hw/cam_profi || true
         
         rm -r doc_img || true
         rm -r doc_cad || true
         rm -r hw_cam_profi || true
         rm -r doc_sch || true
         rm -r doc_placement || true
+        rm -r doc_pnp || true
       
     - uses: stefanzweifel/git-auto-commit-action@v4
       with:
