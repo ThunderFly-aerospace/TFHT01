@@ -47,6 +47,29 @@ jobs:
           schema: ${{ env.schema }}
           board: ${{ env.board }}
           dir: ${{ env.dir }}
+
+  xml:
+    runs-on: ubuntu-latest
+    continue-on-error: true
+    steps:
+      - uses: actions/checkout@v3
+        with:
+          submodules: recursive
+          token: ${{ secrets.pat }}
+          ref: ${{ github.head_ref }}
+
+      - uses: MLAB-project/KiBot@master
+        with:
+          config: ${{ env.kibot }}/xml.kibot.yaml
+          schema: ${{ env.schema }}
+          board: ${{ env.board }}
+          dir: ${{ env.dir }}
+      - uses: actions/upload-artifact@v3
+        if: ${{ success() }}
+        with:
+          name: doc_xml
+          path: ${{ env.dir }}
+
           
 # documentation
   schematics:
@@ -199,7 +222,7 @@ jobs:
   UPDATE_REPO:
     runs-on: ubuntu-latest
     name: Update repozitory.
-    needs: [render, cad, gerbers, schematics, placement, pnp]
+    needs: [render, cad, gerbers, schematics, placement, pnp, xml]
     steps:
     - uses: actions/checkout@v3
       with:
@@ -242,6 +265,7 @@ jobs:
         rm -r doc_sch || true
         rm -r doc_placement || true
         rm -r doc_pnp || true
+        rm -r doc_xml || true
       
     - uses: stefanzweifel/git-auto-commit-action@v4
       with:
