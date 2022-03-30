@@ -220,7 +220,7 @@ jobs:
   UPDATE_REPO:
     runs-on: ubuntu-latest
     name: Update repozitory.
-    needs: [render, cad, gerbers, schematics, placement, pnp, xml]
+    needs: [render, cad, gerbers, placement, pnp, xml]
     steps:
     - uses: actions/checkout@v3
       with:
@@ -233,7 +233,7 @@ jobs:
     
     - name: tree
       run: |
-        apt-get install -y tree
+        sudo apt-get install -y tree
         tree .
     
     - name: Remove old manufarturing data
