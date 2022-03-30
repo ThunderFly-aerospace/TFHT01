@@ -264,6 +264,8 @@ jobs:
         rm -r doc_placement || true
         rm -r doc_pnp || true
         rm -r doc_xml || true
+        
+    - run: git add .
       
     - uses: stefanzweifel/git-auto-commit-action@v4
       with:
