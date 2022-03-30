@@ -265,10 +265,6 @@ jobs:
         rm -r doc_pnp || true
         rm -r doc_xml || true
         
-        git status
-        sudo apt-get install -y tree
-        tree doc/gen
-      
     - uses: stefanzweifel/git-auto-commit-action@v4
       with:
         commit_message: Update actions products
