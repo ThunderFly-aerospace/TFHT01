@@ -220,7 +220,7 @@ jobs:
   UPDATE_REPO:
     runs-on: ubuntu-latest
     name: Update repozitory.
-    needs: [render, cad, gerbers, placement, pnp, xml]
+    needs: [render, cad, gerbers, schematics, pnp, xml]
     steps:
     - uses: actions/checkout@v3
       with:
@@ -230,11 +230,6 @@ jobs:
 
     - name: Download a Build Artifact
       uses: actions/download-artifact@v3.0.0
-    
-    - name: tree
-      run: |
-        sudo apt-get install -y tree
-        tree .
     
     - name: Remove old manufarturing data
       run: | 
@@ -257,22 +252,21 @@ jobs:
         cp -r doc_cad/cad/* doc/gen || true
         cp -r hw_cam_profi/* hw/cam_profi || true
         cp -r doc_sch/docs/* doc/gen || true
-        cp -r doc_xml doc/gen || true
+        cp -r doc_xml/* doc/gen || true
         cp -r doc_sch/img/pcb/* doc/gen/img || true
-        cp -r doc_placement/doc* hw/cam_profi/ || true
-        cp -r doc_pnp/* hw/cam_profi/ || true
-        
-        tree .
-        
+        cp -r doc_placement/doc* hw/cam_profi || true
+        cp -r doc_pnp/* hw/cam_profi || true
+    
         rm -r doc_img || true
         rm -r doc_cad || true
         rm -r hw_cam_profi || true
         rm -r doc_sch || true
         rm -r doc_placement || true
         rm -r doc_pnp || true
-        #rm -r doc_xml || true
+        rm -r doc_xml || true
       
     - uses: stefanzweifel/git-auto-commit-action@v4
       with:
-        commit_message: Push actions product
+        commit_message: Update actions products
+        add_options: ''
 
