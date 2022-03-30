@@ -220,7 +220,7 @@ jobs:
   UPDATE_REPO:
     runs-on: ubuntu-latest
     name: Update repozitory.
-    needs: [render, cad, gerbers, schematics, pnp, xml]
+    needs: [render, cad, gerbers, schematics, pnp, xml, placement]
     steps:
     - uses: actions/checkout@v3
       with:
@@ -242,7 +242,7 @@ jobs:
         mkdir doc || true
         mkdir doc/gen || true
         mkdir doc/gen/img || true
-        #mkdir doc/img/render || true
+        mkdir doc/img/render || true
         mkdir hw || true
         mkdir hw/cam_profi || true
         
@@ -270,6 +270,3 @@ jobs:
         commit_message: Update actions products
         add_options: '-A'
         commit_options: '-a'
-
-    - run: git status
-
