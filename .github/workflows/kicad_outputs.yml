@@ -231,6 +231,11 @@ jobs:
     - name: Download a Build Artifact
       uses: actions/download-artifact@v3.0.0
     
+    - name: tree
+      run: |
+        apt-get install -y tree
+        tree .
+    
     - name: Remove old manufarturing data
       run: | 
         rm -r hw/cam_profi || true
@@ -257,13 +262,15 @@ jobs:
         cp -r doc_placement/doc* hw/cam_profi/ || true
         cp -r doc_pnp/* hw/cam_profi/ || true
         
+        tree .
+        
         rm -r doc_img || true
         rm -r doc_cad || true
         rm -r hw_cam_profi || true
         rm -r doc_sch || true
         rm -r doc_placement || true
         rm -r doc_pnp || true
-        rm -r doc_xml || true
+        #rm -r doc_xml || true
       
     - uses: stefanzweifel/git-auto-commit-action@v4
       with:
