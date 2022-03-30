@@ -240,8 +240,7 @@ jobs:
     
     - name: Extract to right position
       run: |
-      
-        rm -r /hw/cam_profi || true
+    
         mkdir doc || true
         mkdir doc/gen || true
         mkdir doc/gen/img || true
@@ -255,7 +254,7 @@ jobs:
         cp -r doc_cad/cad/* doc/gen || true
         cp -r hw_cam_profi/* hw/cam_profi || true
         cp -r doc_sch/docs/* doc/gen || true
-        cp -r doc_xml/* doc/gen/ || true
+        cp -r doc_xml/* doc/gen || true
         cp -r doc_sch/img/pcb/* doc/gen/img || true
         cp -r doc_placement/doc* hw/cam_profi/ || true
         cp -r doc_pnp/* hw/cam_profi/ || true
