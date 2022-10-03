@@ -7,6 +7,11 @@ Sensor mounted on UAV can be used for a variety of use. It can be used to measur
 ![TFHT01A top view](/doc/img/TFHT01A2.jpg)
 
 
+
+## Where to get it?
+
+ThunderFly Humidity and Temperature sensor counter is commercially available from [ThunderFly s.r.o.](https://www.thunderfly.cz/), write an email to info@thunderfly.cz or shop at [Tindie store](https://www.tindie.com/products/thunderfly/tfht01-aerial-hygrometer-and-thermometer/).
+
 ## Parameters
 
 | Parameter | Value | Description |
