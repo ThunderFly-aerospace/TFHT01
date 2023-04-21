@@ -6,11 +6,9 @@ Sensor mounted on UAV can be used for a variety of use. It can be used to measur
 
 ![TFHT01A top view](/doc/img/TFHT01A2.jpg)
 
-
-
 ## Where to get it?
 
-ThunderFly Humidity and Temperature sensor counter is commercially available from [ThunderFly s.r.o.](https://www.thunderfly.cz/), write an email to info@thunderfly.cz or shop at [Tindie store](https://www.tindie.com/products/thunderfly/tfht01-aerial-hygrometer-and-thermometer/).
+ThunderFly Humidity and Temperature sensor (TFHT01) counter is commercially available from [ThunderFly s.r.o.](https://www.thunderfly.cz/), write an email to info@thunderfly.cz or shop at [Tindie store](https://www.tindie.com/products/thunderfly/tfht01-aerial-hygrometer-and-thermometer/).
 
 ## Parameters
 
@@ -30,4 +28,4 @@ ThunderFly Humidity and Temperature sensor counter is commercially available fro
 The sensor is currently supported by the PX4 autopilot. Multiple sensors can be connected to one autopilot. The measured data are immediately sent to the ground station and they are also logged in the onboard ulog file. Sensor support can be enabled by setting the [SENS_EN_SHT3X](http://docs.px4.io/master/en/advanced_config/parameter_reference.html#SENS_EN_SHT3X) parameter to 1. 
 
 ## Availability
-The device can be purchased from [ThunderFly s.r.o.](https://www.thunderfly.cz/). Contact us by email info@thunderfly.cz for a commercial quotation.
+The device can be purchased from [ThunderFly s.r.o.](https://www.thunderfly.cz/) trought [tindie store](https://www.tindie.com/products/thunderfly/tfht01-aerial-hygrometer-and-thermometer/) or contact us by email info@thunderfly.cz for a commercial quotation.
