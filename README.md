@@ -15,10 +15,13 @@ ThunderFly Humidity and Temperature sensor (TFHT01) is commercially available fr
 | Parameter | Value | Description |
 |-----------|-------|-------------|
 | Sensing element | [SHT35](https://sensirion.com/media/documents/213E6A3B/63A5A569/Datasheet_SHT3x_DIS.pdf) | Other possible sensors SHT30, SHT31 |
+| Typical accuracy | 1.5 %RH and 0.1 °C | |
+| Repeatability | 0.15 %RH , 0.08 °C | he stated repeatability is 3 times the standard deviation (3σ) of multiple consecutive measurements at the stated repeatability and at constant ambient conditions. It is a measure for the noise on the physical sensor output. |
+| Operating temperature range| 0 - +65°C | Sensor physically measures in range -40°C to +120°C with reduced accuracy |
+| Operating humidity range| 0-100 % | At humidity above 80% the performance of the sensor could be degraded in case of prolonged time periods |
 | I2C connector | 4-pin JST-GH | The second connector could be installed on the opposite side |
-| I2C address | 0x44 default | By switching of JP1 is possible change to 0x45 |
-| Operating and storage temperature | -20 - +40°C |  |
-| Operational humidity | 0-100 % | At humidity above 80% the performance of the sensor could be degraded in case of prolonged time periods |
+| I2C address | 0x44 default | By switching of JP1 is possible change address to 0x45 |
+| Storage temperature range| -20 - +40°C |  |
 | Operational input voltage | 3.6 - 5.4V | Overvoltage internally protected by zener diode |
 | Mass | 2 g | PCB without cabling |
 | Dimensions | 30 x 15 x 6.5 mm |  PCB |
