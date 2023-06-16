@@ -14,7 +14,7 @@ ThunderFly Humidity and Temperature sensor (TFHT01) is commercially available fr
 
 | Parameter | Value | Description |
 |-----------|-------|-------------|
-| Sensing element | [SHT35](https://www.sensirion.com/fileadmin/user_upload/customers/sensirion/Dokumente/2_Humidity_Sensors/Datasheets/Sensirion_Humidity_Sensors_SHT3x_Datasheet_digital.pdf) | Other possible sensors SHT30, SHT31 |
+| Sensing element | [SHT35](https://sensirion.com/media/documents/213E6A3B/63A5A569/Datasheet_SHT3x_DIS.pdf) | Other possible sensors SHT30, SHT31 |
 | I2C connector | 4-pin JST-GH | The second connector could be installed on the opposite side |
 | I2C address | 0x44 default | By switching of JP1 is possible change to 0x45 |
 | Operating and storage temperature | -20 - +40°C |  |
