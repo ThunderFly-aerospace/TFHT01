@@ -2,9 +2,9 @@
 
 [![Kicad](https://github.com/ThunderFly-aerospace/TFHT01/actions/workflows/kicad_outputs.yml/badge.svg?branch=TFHT01B)](https://github.com/ThunderFly-aerospace/TFHT01/actions/workflows/kicad_outputs.yml)
 
-Sensor could be directly connected to Pixhawk autopilot with PX4 firmware, or could be used as a sensor of [TF-ATMON monitoring system](https://www.thunderfly.cz/tf-atmon.html). 
+Sensor could be directly connected to Pixhawk autopilot with PX4 firmware, or could be used as a sensor of [TF-ATMON monitoring system](https://www.thunderfly.cz/tf-atmon.html).
 
-Sensor mounted on UAV can be used for a variety of use. It can be used to measure atmospheric temperature and humidity, which can be used to estimate whether icing may form on aerodynamic surfaces. Or to determinate if the flight is conducted within the operating range of the drone.Another use can be to measure the temperature of selected UAV components. For example temperature of batteries, ESC, motor or some bearings. 
+Sensor mounted on UAV can be used for a variety of use. It can be used to measure atmospheric temperature and humidity, which can be used to estimate whether icing may form on aerodynamic surfaces. Or to determinate if the flight is conducted within the operating range of the drone.Another use can be to measure the temperature of selected UAV components. For example temperature of batteries, ESC, motor or some bearings.
 
 ![TFHT01A top view](/doc/img/TFHT01A2.jpg)
 
@@ -23,13 +23,21 @@ Sensor mounted on UAV can be used for a variety of use. It can be used to measur
 | Weather resistance | IP40 | External connectors fully occupied. The sensor itself is protected by IP67 according the [sensirion datasheet](https://www.sensirion.com/fileadmin/user_upload/customers/sensirion/Dokumente/2_Humidity_Sensors/Datasheets/Sensirion_Humidity_Sensors_SHT3x_Datasheet_Filter_Membrane.pdf) |
 
 
+## Applications
+
+### Atmospheric sounding
+
+The TFHT01 sensor could be used for [direct atmospheric sounding](https://en.wikipedia.org/wiki/Atmospheric_sounding)
+
+![TFHT01A atmospheric profiling](/doc/img/TFHT_vertical_profile_measurement.png)
+
 ## Schematics
 
 [![Schematics](/doc/gen/TFHT01B-schematic.svg)](/doc/gen/TFHT01B-schematic.pdf)
 
 
-## PX4 
-The sensor is currently supported by the PX4 autopilot. Multiple sensors can be connected to one autopilot. The measured data are immediately sent to the ground station and they are also logged in the onboard ulog file. Sensor support can be enabled by setting the [SENS_EN_SHT3X](http://docs.px4.io/master/en/advanced_config/parameter_reference.html#SENS_EN_SHT3X) parameter to 1. 
+## PX4
+The sensor is currently supported by the PX4 autopilot. Multiple sensors can be connected to one autopilot. The measured data are immediately sent to the ground station and they are also logged in the onboard ulog file. Sensor support can be enabled by setting the [SENS_EN_SHT3X](http://docs.px4.io/master/en/advanced_config/parameter_reference.html#SENS_EN_SHT3X) parameter to 1.
 
 ## Availability
 The device can be purchased from [ThunderFly s.r.o.](https://www.thunderfly.cz/). Contact us by email info@thunderfly.cz for a commercial quotation.
