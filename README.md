@@ -13,8 +13,8 @@ Sensor mounted on UAV can be used for a variety of use. It can be used to measur
 | Parameter | Value | Description |
 |-----------|-------|-------------|
 | Sensing element | [SHT35](https://www.sensirion.com/fileadmin/user_upload/customers/sensirion/Dokumente/2_Humidity_Sensors/Datasheets/Sensirion_Humidity_Sensors_SHT3x_Datasheet_digital.pdf) | Other possible sensors SHT30, SHT31 |
-| I2C connector | 4-pin JST-GH | The second connector could be installed on opposite side |
-| I2C adress | 0x44 default | By switching of JP1 is possible change to 0x45 |
+| I2C connector | 4-pin JST-GH | The second connector could be installed on the opposite side |
+| I2C address | 0x44 default | By switching of JP1 is possible change to 0x45 |
 | Operating and storage temperature | -20 - +40°C |  |
 | Operational humidity | 0-100 % | At humidity above 80% the performance of the sensor could be degraded in case of prolonged time periods |
 | Operational input voltage | 3.6 - 5.4V | Overvoltage internally protected by zener diode |
@@ -27,7 +27,7 @@ Sensor mounted on UAV can be used for a variety of use. It can be used to measur
 
 ### Atmospheric sounding
 
-The TFHT01 sensor could be used for [direct atmospheric sounding](https://en.wikipedia.org/wiki/Atmospheric_sounding)
+The TFHT01 sensor could be used for [direct atmospheric sounding](https://en.wikipedia.org/wiki/Atmospheric_sounding). Here is an example of measured data taken by [TF-G2 autogyro](https://www.thunderfly.cz/tf-g2.html).
 
 ![TFHT01A atmospheric profiling](/doc/img/TFHT_vertical_profile_measurement.png)
 
