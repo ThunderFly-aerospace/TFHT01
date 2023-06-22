@@ -1,11 +1,10 @@
-# TFHT01 - UAV Humidity and Temperature sensor
+# TFHT01 - UAV Humidity and Temperature Sensor
 
 [![Kicad](https://github.com/ThunderFly-aerospace/TFHT01/actions/workflows/kicad_outputs.yml/badge.svg?branch=TFHT01B)](https://github.com/ThunderFly-aerospace/TFHT01/actions/workflows/kicad_outputs.yml)
 
 The TFHT01 hygrometer sensor offers flexible integration options. It can be directly connected to a Pixhawk autopilot with PX4 firmware, or it can be used as a sensor for the [TF-ATMON monitoring system](https://www.thunderfly.cz/tf-atmon.html).
 
-
-Sensors mounted on UAVs can be used for a variety of purposes. It can measure air temperature and humidity, which can be used to estimate whether icing may form on aerodynamic surfaces or to determine if the flight is conducted within the operating range of the drone. Another use can be to measure the temperature of selected UAV components, for example, the temperature of batteries, ESC, motor, or some bearings. 
+Sensors mounted on UAVs can be used for a variety of purposes. Basically, TFHT01 can measure air temperature and humidity, which can be used for meteorological purposes to estimate whether icing may form on aerodynamic surfaces. It could also be used to determine if the flight is conducted within the operating range of the drone. Another use can be to measure the temperature of selected UAV components, for example, the temperature of batteries, ESC, motor, or some bearings. 
 
 ![TFHT01A top view](/doc/img/TFHT01A2.jpg)
 
@@ -43,7 +42,6 @@ The TFHT01 sensor could be used for [direct atmospheric sounding](https://en.wik
 ## Schematics
 
 [![Schematics](/doc/gen/TFHT01B-schematic.svg)](/doc/gen/TFHT01B-schematic.pdf)
-
 
 ## Usage in PX4 
 The sensor is currently supported by the PX4 autopilot. Multiple sensors can be connected to one autopilot. The measured data are immediately sent to the ground station and they are also logged in the onboard ulog file. Sensor support can be enabled by setting the [SENS_EN_SHT3X](http://docs.px4.io/master/en/advanced_config/parameter_reference.html#SENS_EN_SHT3X) parameter to 1.
