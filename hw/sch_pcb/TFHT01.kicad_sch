@@ -1296,7 +1296,7 @@
     )
     (pin "1" (uuid 20796f8f-af29-4957-88a1-1ced06eb3f92))
     (instances
-      (project "TFHT01B"
+      (project "TFHT01"
         (path "/d4721186-2967-414c-922e-c57cc18eddf1"
           (reference "#PWR012") (unit 1)
         )
@@ -1325,7 +1325,7 @@
     (pin "1" (uuid e7992c28-36d9-4862-a2c5-c9f5b5333baf))
     (pin "2" (uuid e92c0c23-45b3-4ec6-96c3-c8f06aa9889a))
     (instances
-      (project "TFHT01B"
+      (project "TFHT01"
         (path "/d4721186-2967-414c-922e-c57cc18eddf1"
           (reference "C4") (unit 1)
         )
@@ -1350,7 +1350,7 @@
     )
     (pin "1" (uuid dbb81ca3-3461-4449-95d7-5aa5fc4e805c))
     (instances
-      (project "TFHT01B"
+      (project "TFHT01"
         (path "/d4721186-2967-414c-922e-c57cc18eddf1"
           (reference "#PWR09") (unit 1)
         )
@@ -1379,7 +1379,7 @@
     (pin "1" (uuid 1f80cc4a-5bb5-41c2-afe7-90ca0320ffe3))
     (pin "2" (uuid 3f9dbc9b-1639-4c20-9836-3c46e9c2977a))
     (instances
-      (project "TFHT01B"
+      (project "TFHT01"
         (path "/d4721186-2967-414c-922e-c57cc18eddf1"
           (reference "R3") (unit 1)
         )
@@ -1408,7 +1408,7 @@
     (pin "1" (uuid 45af601f-e140-40f5-9390-e71c92c9f0e8))
     (pin "2" (uuid ad0af965-9a33-44a3-9d1b-70ce7df9bff3))
     (instances
-      (project "TFHT01B"
+      (project "TFHT01"
         (path "/d4721186-2967-414c-922e-c57cc18eddf1"
           (reference "R10") (unit 1)
         )
@@ -1437,7 +1437,7 @@
     (pin "1" (uuid c8a53e67-2505-494d-a59d-e1871c280ac2))
     (pin "2" (uuid 3fd98aa3-a70a-495e-aecb-b4092a1492eb))
     (instances
-      (project "TFHT01B"
+      (project "TFHT01"
         (path "/d4721186-2967-414c-922e-c57cc18eddf1"
           (reference "C3") (unit 1)
         )
@@ -1466,7 +1466,7 @@
     (pin "1" (uuid ff9e0030-5244-4131-84bd-b1c3a0a086bd))
     (pin "2" (uuid 3594e926-bb3d-42e4-96fb-023c2c348dff))
     (instances
-      (project "TFHT01B"
+      (project "TFHT01"
         (path "/d4721186-2967-414c-922e-c57cc18eddf1"
           (reference "D1") (unit 1)
         )
@@ -1491,7 +1491,7 @@
     )
     (pin "1" (uuid f4ef5ab9-62b6-418d-99a8-7483543e2cad))
     (instances
-      (project "TFHT01B"
+      (project "TFHT01"
         (path "/d4721186-2967-414c-922e-c57cc18eddf1"
           (reference "#PWR0105") (unit 1)
         )
@@ -1516,7 +1516,7 @@
     )
     (pin "1" (uuid 30f5a6f6-aaf1-4898-8e5c-23fe118599ad))
     (instances
-      (project "TFHT01B"
+      (project "TFHT01"
         (path "/d4721186-2967-414c-922e-c57cc18eddf1"
           (reference "#PWR0108") (unit 1)
         )
@@ -1541,7 +1541,7 @@
     )
     (pin "1" (uuid 9e72bae0-63dd-400a-8a7e-78bc5cc15928))
     (instances
-      (project "TFHT01B"
+      (project "TFHT01"
         (path "/d4721186-2967-414c-922e-c57cc18eddf1"
           (reference "#PWR0109") (unit 1)
         )
@@ -1573,7 +1573,7 @@
     (pin "4" (uuid 4eb6f28c-cc16-4206-a073-1796fa0bb969))
     (pin "5" (uuid 51d92b54-2180-4054-b378-7cd764fc3fab))
     (instances
-      (project "TFHT01B"
+      (project "TFHT01"
         (path "/d4721186-2967-414c-922e-c57cc18eddf1"
           (reference "U3") (unit 1)
         )
@@ -1598,7 +1598,7 @@
     )
     (pin "1" (uuid 91e1f399-c2dd-44c9-a1c9-70fd72e3d5ea))
     (instances
-      (project "TFHT01B"
+      (project "TFHT01"
         (path "/d4721186-2967-414c-922e-c57cc18eddf1"
           (reference "#PWR0112") (unit 1)
         )
@@ -1623,7 +1623,7 @@
     )
     (pin "1" (uuid e1783558-032c-46d0-8f7d-e94647d54da9))
     (instances
-      (project "TFHT01B"
+      (project "TFHT01"
         (path "/d4721186-2967-414c-922e-c57cc18eddf1"
           (reference "#PWR0113") (unit 1)
         )
@@ -1652,7 +1652,7 @@
     (pin "1" (uuid d873df0d-3642-460a-bf92-84b4f19fd29f))
     (pin "2" (uuid ecc0bdbd-2a85-4fad-8539-bf4e077b2879))
     (instances
-      (project "TFHT01B"
+      (project "TFHT01"
         (path "/d4721186-2967-414c-922e-c57cc18eddf1"
           (reference "C5") (unit 1)
         )
@@ -1677,7 +1677,7 @@
     )
     (pin "1" (uuid 6cd5c33d-a261-46bc-8414-9cc8ecd0e5c6))
     (instances
-      (project "TFHT01B"
+      (project "TFHT01"
         (path "/d4721186-2967-414c-922e-c57cc18eddf1"
           (reference "#PWR0117") (unit 1)
         )
@@ -1702,7 +1702,7 @@
     )
     (pin "1" (uuid 06356a3c-748a-4dde-8cb3-45b077e148df))
     (instances
-      (project "TFHT01B"
+      (project "TFHT01"
         (path "/d4721186-2967-414c-922e-c57cc18eddf1"
           (reference "#PWR0118") (unit 1)
         )
@@ -1737,7 +1737,7 @@
     (pin "4" (uuid 43106ac2-8e9d-4f55-b35f-8383b9257af9))
     (pin "MP" (uuid 7b419791-c191-47ef-aa5b-7c10c75e2aa3))
     (instances
-      (project "TFHT01B"
+      (project "TFHT01"
         (path "/d4721186-2967-414c-922e-c57cc18eddf1"
           (reference "J2") (unit 1)
         )
@@ -1766,7 +1766,7 @@
     (pin "1" (uuid 97e07206-5461-44bf-9368-2e7fb3a8b29b))
     (pin "2" (uuid e497e383-814e-4469-b8d5-2cefe1f38ad3))
     (instances
-      (project "TFHT01B"
+      (project "TFHT01"
         (path "/d4721186-2967-414c-922e-c57cc18eddf1"
           (reference "C1") (unit 1)
         )
@@ -1791,7 +1791,7 @@
     )
     (pin "1" (uuid b4750dc7-aa81-4f65-8190-330a2662da01))
     (instances
-      (project "TFHT01B"
+      (project "TFHT01"
         (path "/d4721186-2967-414c-922e-c57cc18eddf1"
           (reference "#PWR0114") (unit 1)
         )
@@ -1816,7 +1816,7 @@
     )
     (pin "1" (uuid c856ed3b-1562-49bc-ad1b-6e9b2ed0523c))
     (instances
-      (project "TFHT01B"
+      (project "TFHT01"
         (path "/d4721186-2967-414c-922e-c57cc18eddf1"
           (reference "#PWR0107") (unit 1)
         )
@@ -1846,7 +1846,7 @@
     (pin "2" (uuid 6e2f8c4a-11b2-4e42-b191-85b6f744801a))
     (pin "3" (uuid 4126a242-76e3-42a7-aa1c-504b6e52f18a))
     (instances
-      (project "TFHT01B"
+      (project "TFHT01"
         (path "/d4721186-2967-414c-922e-c57cc18eddf1"
           (reference "Q1") (unit 1)
         )
@@ -1871,7 +1871,7 @@
     )
     (pin "1" (uuid df89f97b-f748-4afa-af2b-efc2fee968d4))
     (instances
-      (project "TFHT01B"
+      (project "TFHT01"
         (path "/d4721186-2967-414c-922e-c57cc18eddf1"
           (reference "M4") (unit 1)
         )
@@ -1896,7 +1896,7 @@
     )
     (pin "1" (uuid e6da7220-ce76-4a5c-afb8-6ee7ce2463c9))
     (instances
-      (project "TFHT01B"
+      (project "TFHT01"
         (path "/d4721186-2967-414c-922e-c57cc18eddf1"
           (reference "M1") (unit 1)
         )
@@ -1921,7 +1921,7 @@
     )
     (pin "1" (uuid 11ba8aa1-c50e-444b-8acc-7f16388916bb))
     (instances
-      (project "TFHT01B"
+      (project "TFHT01"
         (path "/d4721186-2967-414c-922e-c57cc18eddf1"
           (reference "#PWR0103") (unit 1)
         )
@@ -1946,7 +1946,7 @@
     )
     (pin "1" (uuid 59c2f3a6-16bd-4bba-92ab-de8eb638fbc4))
     (instances
-      (project "TFHT01B"
+      (project "TFHT01"
         (path "/d4721186-2967-414c-922e-c57cc18eddf1"
           (reference "#PWR0106") (unit 1)
         )
@@ -1971,7 +1971,7 @@
     )
     (pin "1" (uuid a208f8ef-11d6-4fb6-ac53-55ed02a865e8))
     (instances
-      (project "TFHT01B"
+      (project "TFHT01"
         (path "/d4721186-2967-414c-922e-c57cc18eddf1"
           (reference "#PWR0101") (unit 1)
         )
@@ -1979,23 +1979,23 @@
     )
   )
 
-  (symbol (lib_id "Mechanical:MountingHole") (at 248.285 45.085 0) (unit 1)
+  (symbol (lib_id "Mechanical:MountingHole") (at 241.3 40.005 0) (unit 1)
     (in_bom no) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 33ab3c40-672b-4aba-b37a-c0cccd048822)
-    (property "Reference" "H2" (at 250.825 44.2503 0)
+    (property "Reference" "H2" (at 243.84 39.1703 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Value" "Heat insulation" (at 250.825 46.7872 0)
+    (property "Value" "Heat insulation" (at 243.84 41.7072 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Footprint" "MountingHole:MountingHole_2mm" (at 248.285 45.085 0)
+    (property "Footprint" "Mlab_Mechanical:MountingHole_1mm" (at 241.3 40.005 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "Datasheet" "~" (at 248.285 45.085 0)
+    (property "Datasheet" "~" (at 241.3 40.005 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (instances
-      (project "TFHT01B"
+      (project "TFHT01"
         (path "/d4721186-2967-414c-922e-c57cc18eddf1"
           (reference "H2") (unit 1)
         )
@@ -2024,7 +2024,7 @@
     (pin "1" (uuid 46a94be3-59c3-412f-bde9-e316e0ba2969))
     (pin "2" (uuid 1eeec962-1815-4e03-8e67-5762ca917797))
     (instances
-      (project "TFHT01B"
+      (project "TFHT01"
         (path "/d4721186-2967-414c-922e-c57cc18eddf1"
           (reference "R4") (unit 1)
         )
@@ -2032,23 +2032,23 @@
     )
   )
 
-  (symbol (lib_id "Mechanical:MountingHole") (at 248.285 64.135 0) (unit 1)
+  (symbol (lib_id "Mechanical:MountingHole") (at 241.3 59.055 0) (unit 1)
     (in_bom no) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 527e455b-af88-4480-a309-b95af91d418d)
-    (property "Reference" "H5" (at 250.825 63.3003 0)
+    (property "Reference" "H5" (at 243.84 58.2203 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Value" "Heat insulation" (at 250.825 65.8372 0)
+    (property "Value" "Heat insulation" (at 243.84 60.7572 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Footprint" "Mlab_Mechanical:MountingHole_1mm" (at 248.285 64.135 0)
+    (property "Footprint" "Mlab_Mechanical:MountingHole_1mm" (at 241.3 59.055 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "Datasheet" "~" (at 248.285 64.135 0)
+    (property "Datasheet" "~" (at 241.3 59.055 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (instances
-      (project "TFHT01B"
+      (project "TFHT01"
         (path "/d4721186-2967-414c-922e-c57cc18eddf1"
           (reference "H5") (unit 1)
         )
@@ -2056,23 +2056,23 @@
     )
   )
 
-  (symbol (lib_id "Mechanical:MountingHole") (at 248.285 51.435 0) (unit 1)
+  (symbol (lib_id "Mechanical:MountingHole") (at 241.3 46.355 0) (unit 1)
     (in_bom no) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 54b9d44f-1643-4921-8e3b-2c03405448a7)
-    (property "Reference" "H3" (at 250.825 50.6003 0)
+    (property "Reference" "H3" (at 243.84 45.5203 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Value" "Heat insulation" (at 250.825 53.1372 0)
+    (property "Value" "Heat insulation" (at 243.84 48.0572 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Footprint" "Mlab_Mechanical:MountingHole_1mm" (at 248.285 51.435 0)
+    (property "Footprint" "Mlab_Mechanical:MountingHole_1mm" (at 241.3 46.355 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "Datasheet" "~" (at 248.285 51.435 0)
+    (property "Datasheet" "~" (at 241.3 46.355 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (instances
-      (project "TFHT01B"
+      (project "TFHT01"
         (path "/d4721186-2967-414c-922e-c57cc18eddf1"
           (reference "H3") (unit 1)
         )
@@ -2080,23 +2080,23 @@
     )
   )
 
-  (symbol (lib_id "Mechanical:MountingHole") (at 248.285 38.735 0) (unit 1)
+  (symbol (lib_id "Mechanical:MountingHole") (at 241.3 33.655 0) (unit 1)
     (in_bom no) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 56801e6d-c4ab-4f7b-8289-2119a52fa227)
-    (property "Reference" "H1" (at 250.825 37.9003 0)
+    (property "Reference" "H1" (at 243.84 32.8203 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Value" "Heat insulation" (at 250.825 40.4372 0)
+    (property "Value" "Heat insulation" (at 243.84 35.3572 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Footprint" "Mlab_Mechanical:MountingHole_1mm" (at 248.285 38.735 0)
+    (property "Footprint" "Mlab_Mechanical:MountingHole_1mm" (at 241.3 33.655 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "Datasheet" "~" (at 248.285 38.735 0)
+    (property "Datasheet" "~" (at 241.3 33.655 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (instances
-      (project "TFHT01B"
+      (project "TFHT01"
         (path "/d4721186-2967-414c-922e-c57cc18eddf1"
           (reference "H1") (unit 1)
         )
@@ -2121,7 +2121,7 @@
     )
     (pin "1" (uuid 89291cae-0623-4ccc-b11c-0328ab2574e4))
     (instances
-      (project "TFHT01B"
+      (project "TFHT01"
         (path "/d4721186-2967-414c-922e-c57cc18eddf1"
           (reference "#PWR0104") (unit 1)
         )
@@ -2150,7 +2150,7 @@
     (pin "1" (uuid 4b2fba8f-aac5-4325-b2dc-920faaead8ea))
     (pin "2" (uuid eaf9bdf9-f27c-4f46-af80-5fd070bd627d))
     (instances
-      (project "TFHT01B"
+      (project "TFHT01"
         (path "/d4721186-2967-414c-922e-c57cc18eddf1"
           (reference "R2") (unit 1)
         )
@@ -2158,23 +2158,23 @@
     )
   )
 
-  (symbol (lib_id "Mechanical:MountingHole") (at 248.285 57.785 0) (unit 1)
+  (symbol (lib_id "Mechanical:MountingHole") (at 241.3 52.705 0) (unit 1)
     (in_bom no) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 66b7b3b0-00bb-4640-87b4-6fd813d90142)
-    (property "Reference" "H4" (at 250.825 56.9503 0)
+    (property "Reference" "H4" (at 243.84 51.8703 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Value" "Heat insulation" (at 250.825 59.4872 0)
+    (property "Value" "Heat insulation" (at 243.84 54.4072 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Footprint" "Mlab_Mechanical:MountingHole_1mm" (at 248.285 57.785 0)
+    (property "Footprint" "Mlab_Mechanical:MountingHole_1mm" (at 241.3 52.705 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "Datasheet" "~" (at 248.285 57.785 0)
+    (property "Datasheet" "~" (at 241.3 52.705 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (instances
-      (project "TFHT01B"
+      (project "TFHT01"
         (path "/d4721186-2967-414c-922e-c57cc18eddf1"
           (reference "H4") (unit 1)
         )
@@ -2199,7 +2199,7 @@
     )
     (pin "1" (uuid 7cd34d1b-a83c-480e-afec-21451a18763d))
     (instances
-      (project "TFHT01B"
+      (project "TFHT01"
         (path "/d4721186-2967-414c-922e-c57cc18eddf1"
           (reference "#PWR0119") (unit 1)
         )
@@ -2224,7 +2224,7 @@
     )
     (pin "1" (uuid d730c67e-6a1a-4166-ac74-9b169116b31c))
     (instances
-      (project "TFHT01B"
+      (project "TFHT01"
         (path "/d4721186-2967-414c-922e-c57cc18eddf1"
           (reference "#PWR0110") (unit 1)
         )
@@ -2253,7 +2253,7 @@
     (pin "1" (uuid a1430a60-d955-4b63-b55e-8af0d3ea7e89))
     (pin "2" (uuid ee8b976f-5b29-43d7-9ae9-edd9978ac059))
     (instances
-      (project "TFHT01B"
+      (project "TFHT01"
         (path "/d4721186-2967-414c-922e-c57cc18eddf1"
           (reference "R1") (unit 1)
         )
@@ -2278,7 +2278,7 @@
     )
     (pin "1" (uuid cedb35e6-cd4a-4a8a-8eab-cb7fe9d0a5e3))
     (instances
-      (project "TFHT01B"
+      (project "TFHT01"
         (path "/d4721186-2967-414c-922e-c57cc18eddf1"
           (reference "M2") (unit 1)
         )
@@ -2303,9 +2303,33 @@
     )
     (pin "1" (uuid 2918fa73-15fb-43ad-9cce-866645c4d4a0))
     (instances
-      (project "TFHT01B"
+      (project "TFHT01"
         (path "/d4721186-2967-414c-922e-c57cc18eddf1"
           (reference "#PWR0102") (unit 1)
+        )
+      )
+    )
+  )
+
+  (symbol (lib_id "Mechanical:MountingHole") (at 262.89 40.005 0) (unit 1)
+    (in_bom no) (on_board yes) (dnp no) (fields_autoplaced)
+    (uuid 95c42dfd-70f7-42d3-a193-57443d6c7a23)
+    (property "Reference" "H7" (at 265.43 39.1703 0)
+      (effects (font (size 1.27 1.27)) (justify left))
+    )
+    (property "Value" "Heat insulation" (at 265.43 41.7072 0)
+      (effects (font (size 1.27 1.27)) (justify left))
+    )
+    (property "Footprint" "Mlab_Mechanical:MountingHole_1mm" (at 262.89 40.005 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Datasheet" "~" (at 262.89 40.005 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (instances
+      (project "TFHT01"
+        (path "/d4721186-2967-414c-922e-c57cc18eddf1"
+          (reference "H7") (unit 1)
         )
       )
     )
@@ -2332,7 +2356,7 @@
     (pin "1" (uuid 7f4013a7-ba3a-47f4-8177-d6ea0e6fb0fb))
     (pin "2" (uuid b8f02e59-aaf1-4787-b7f6-f7c6fc13b298))
     (instances
-      (project "TFHT01B"
+      (project "TFHT01"
         (path "/d4721186-2967-414c-922e-c57cc18eddf1"
           (reference "D2") (unit 1)
         )
@@ -2357,7 +2381,7 @@
     )
     (pin "1" (uuid 18852780-22f5-4cf7-ab4d-20e1d590b5ee))
     (instances
-      (project "TFHT01B"
+      (project "TFHT01"
         (path "/d4721186-2967-414c-922e-c57cc18eddf1"
           (reference "M6") (unit 1)
         )
@@ -2382,7 +2406,7 @@
     )
     (pin "1" (uuid 2918fa73-15fb-43ad-9cce-866645c4d4a1))
     (instances
-      (project "TFHT01B"
+      (project "TFHT01"
         (path "/d4721186-2967-414c-922e-c57cc18eddf1"
           (reference "#PWR0116") (unit 1)
         )
@@ -2411,7 +2435,7 @@
     (pin "1" (uuid 557e2ea7-d2ca-4fe5-a982-9442ea2d7d73))
     (pin "2" (uuid 823595a9-ec52-42a1-b248-d19ae4dca902))
     (instances
-      (project "TFHT01B"
+      (project "TFHT01"
         (path "/d4721186-2967-414c-922e-c57cc18eddf1"
           (reference "D3") (unit 1)
         )
@@ -2447,7 +2471,7 @@
     (pin "8" (uuid 16a227be-683e-45ad-8120-e72f12f3c069))
     (pin "9" (uuid cce3691f-5c7c-4f8c-8e0e-7a23fb4409cc))
     (instances
-      (project "TFHT01B"
+      (project "TFHT01"
         (path "/d4721186-2967-414c-922e-c57cc18eddf1"
           (reference "U1") (unit 1)
         )
@@ -2472,7 +2496,7 @@
     )
     (pin "1" (uuid e752bd9d-45b6-406b-b065-2edbe303f788))
     (instances
-      (project "TFHT01B"
+      (project "TFHT01"
         (path "/d4721186-2967-414c-922e-c57cc18eddf1"
           (reference "#FLG0102") (unit 1)
         )
@@ -2497,7 +2521,7 @@
     )
     (pin "1" (uuid 9b1859ae-03f6-48f6-b48f-f70d5eedbcfd))
     (instances
-      (project "TFHT01B"
+      (project "TFHT01"
         (path "/d4721186-2967-414c-922e-c57cc18eddf1"
           (reference "#PWR0120") (unit 1)
         )
@@ -2522,7 +2546,7 @@
     )
     (pin "1" (uuid 7f648cf0-c26c-4aa8-bcf5-a84df19ccb76))
     (instances
-      (project "TFHT01B"
+      (project "TFHT01"
         (path "/d4721186-2967-414c-922e-c57cc18eddf1"
           (reference "#PWR0111") (unit 1)
         )
@@ -2547,7 +2571,7 @@
     )
     (pin "1" (uuid 199c2b3a-77d2-4604-a5fd-4505d0d5fd61))
     (instances
-      (project "TFHT01B"
+      (project "TFHT01"
         (path "/d4721186-2967-414c-922e-c57cc18eddf1"
           (reference "#PWR0115") (unit 1)
         )
@@ -2582,7 +2606,7 @@
     (pin "4" (uuid bc44677a-f5c0-4dbb-a2e0-eba7f743f163))
     (pin "MP" (uuid 9852328e-add2-4e12-a465-3055839c193f))
     (instances
-      (project "TFHT01B"
+      (project "TFHT01"
         (path "/d4721186-2967-414c-922e-c57cc18eddf1"
           (reference "J1") (unit 1)
         )
@@ -2607,7 +2631,7 @@
     )
     (pin "1" (uuid 1de350d8-bfdc-48be-bec0-470f639d67fa))
     (instances
-      (project "TFHT01B"
+      (project "TFHT01"
         (path "/d4721186-2967-414c-922e-c57cc18eddf1"
           (reference "M5") (unit 1)
         )
@@ -2632,7 +2656,7 @@
     )
     (pin "1" (uuid 7832b00f-8350-4292-a459-419f8a982ec7))
     (instances
-      (project "TFHT01B"
+      (project "TFHT01"
         (path "/d4721186-2967-414c-922e-c57cc18eddf1"
           (reference "#FLG0101") (unit 1)
         )
@@ -2656,7 +2680,7 @@
       (effects (font (size 1.27 1.27)) hide)
     )
     (instances
-      (project "TFHT01B"
+      (project "TFHT01"
         (path "/d4721186-2967-414c-922e-c57cc18eddf1"
           (reference "M7") (unit 1)
         )
@@ -2683,9 +2707,33 @@
     (pin "2" (uuid 069d94fb-44d8-4d69-901a-37fc9abd38ff))
     (pin "3" (uuid 086e62fe-ef91-4d12-bbb3-0b51bf3a0402))
     (instances
-      (project "TFHT01B"
+      (project "TFHT01"
         (path "/d4721186-2967-414c-922e-c57cc18eddf1"
           (reference "JP1") (unit 1)
+        )
+      )
+    )
+  )
+
+  (symbol (lib_id "Mechanical:MountingHole") (at 262.89 33.655 0) (unit 1)
+    (in_bom no) (on_board yes) (dnp no) (fields_autoplaced)
+    (uuid e284e302-c864-4fd6-8274-277067e3e751)
+    (property "Reference" "H6" (at 265.43 32.8203 0)
+      (effects (font (size 1.27 1.27)) (justify left))
+    )
+    (property "Value" "Heat insulation" (at 265.43 35.3572 0)
+      (effects (font (size 1.27 1.27)) (justify left))
+    )
+    (property "Footprint" "Mlab_Mechanical:MountingHole_1mm" (at 262.89 33.655 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Datasheet" "~" (at 262.89 33.655 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (instances
+      (project "TFHT01"
+        (path "/d4721186-2967-414c-922e-c57cc18eddf1"
+          (reference "H6") (unit 1)
         )
       )
     )
@@ -2708,9 +2756,33 @@
     )
     (pin "1" (uuid 43d35b92-9519-4e41-9379-de8e261d259b))
     (instances
-      (project "TFHT01B"
+      (project "TFHT01"
         (path "/d4721186-2967-414c-922e-c57cc18eddf1"
           (reference "M3") (unit 1)
+        )
+      )
+    )
+  )
+
+  (symbol (lib_id "Mechanical:MountingHole") (at 262.89 46.355 0) (unit 1)
+    (in_bom no) (on_board yes) (dnp no) (fields_autoplaced)
+    (uuid ecef95bd-537f-4460-ab6e-2369f45e7445)
+    (property "Reference" "H8" (at 265.43 45.5203 0)
+      (effects (font (size 1.27 1.27)) (justify left))
+    )
+    (property "Value" "Heat insulation" (at 265.43 48.0572 0)
+      (effects (font (size 1.27 1.27)) (justify left))
+    )
+    (property "Footprint" "Mlab_Mechanical:MountingHole_1mm" (at 262.89 46.355 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Datasheet" "~" (at 262.89 46.355 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (instances
+      (project "TFHT01"
+        (path "/d4721186-2967-414c-922e-c57cc18eddf1"
+          (reference "H8") (unit 1)
         )
       )
     )
