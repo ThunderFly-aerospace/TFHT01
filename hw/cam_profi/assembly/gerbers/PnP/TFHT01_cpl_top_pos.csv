@@ -1,0 +1,8 @@
+Designator,Val,Package,Mid X,Mid Y,Rotation,Layer
+"J2","SM04B-GHS-TB","JST_GH_SM04B-GHS-TB_1x04-1MP_P1.25mm_Horizontal",2.9972,7.5000,-90.0000,top
+"M1","M3","dira_3mm",22.5000,15.0000,0.0000,top
+"M2","M3","dira_3mm",12.5000,0.0000,0.0000,top
+"M3","M3","dira_3mm",2.5000,0.0000,0.0000,top
+"M4","M3","dira_3mm",12.5000,15.0000,0.0000,top
+"M5","M3","dira_3mm",22.5000,0.0000,0.0000,top
+"M6","M3","dira_3mm",2.5000,15.0000,0.0000,top

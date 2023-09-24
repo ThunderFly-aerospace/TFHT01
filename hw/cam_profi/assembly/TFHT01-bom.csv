@@ -1,0 +1,15 @@
+Component,Description,Part,References,Value,Footprint,Quantity Per PCB,Datasheet,ust_id
+1,Unpolarized capacitor,C,C4C5,100nF,SMD-0603,2,~,5c70984812875079b91f8bf2
+2,Unpolarized capacitor,C,C1,1uF,SMD-0603,1,~,5c70984812875079b91f8bc2
+3,Unpolarized capacitor,C,C3,10uF,SMD-0805,1,~,5c70984812875079b91f8bbd
+4,,D_ZENER,D1,BZX585-B5V6.115,D_SOD-523,1,,60879d38128750769ee58e48
+5,Light emitting diode,LED,D2,LED GREEN,LED_1206_mill,1,~,5c70984412875079b91f8895
+6,Light emitting diode,LED,D3,LED RED,LED_1206_mill,1,~,5c70984412875079b91f8896
+7,,SM04B-GHS-TB,J1J2,SM04B-GHS-TB,JST_GH_SM04B-GHS-TB_1x04-1MP_P1.25mm_Horizontal,2,,5c86273d1287500b4e0280be
+8,,CAP-SF2,M7,CAP-SF2,CAP-SF2,1,,
+9,,HOLE,M1M2M3M4M5M6,M3,dira_3mm,6,,
+10,"0.8A Ic, 45V Vce, NPN Transistor, SOT-23",BC817,Q1,BC817,SOT-23,1,http://www.fairchildsemi.com/ds/BC/BC817.pdf,5c70984712875079b91f8aec
+11,Resistor,R,R1R4,180R,SMD-0603,2,~,5c70984512875079b91f8957
+12,Resistor,R,R2R3R10,10k,SMD-0603,3,~,5c70984512875079b91f8956 5c70984512875079b91f8962
+13,"300mA Low-dropout Voltage Regulator, Vout 3.3V, Vin up to 5.5V, SOT-23",MIC5504-3.3YM5,U3,MIC5504-3.3YM5,SOT-23-5,1,http://ww1.microchip.com/downloads/en/DeviceDoc/MIC550X.pdf,5c7255e81287500b4e112ea2
+14,"I²C humidity and temperature sensor, ±1.5%RH, ±0.2°C, AEQ-100, DFN-8",SHT35A-DIS,U1,SHT35A-DIS,Sensirion_DFN-8-1EP_2.5x2.5mm_P0.5mm_EP1.1x1.7mm,1,https://www.sensirion.com/fileadmin/user_upload/customers/sensirion/Dokumente/2_Humidity_Sensors/Datasheets/Sensirion_Humidity_Sensors_SHT3xA_Datasheet.pdf,5c70984612875079b91f89e4

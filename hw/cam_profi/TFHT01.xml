@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <export version="E">
   <design>
-    <source>/github/workspace/hw/sch_pcb/TFHT01B.kicad_sch</source>
-    <date>Thu Jun 22 08:31:53 2023</date>
-    <tool>Eeschema 6.0.4-6f826c9f35~116~ubuntu20.04.1</tool>
+    <source>/github/workspace/hw/sch_pcb/TFHT01.kicad_sch</source>
+    <date>Sun Sep 24 12:08:38 2023</date>
+    <tool>Eeschema 7.0.7-7.0.7~ubuntu23.04.1</tool>
     <sheet number="1" name="/" tstamps="/">
       <title_block>
         <title>TFHT01B</title>
         <company>ThunderFly s.r.o.</company>
         <rev/>
         <date>2021-04-05</date>
-        <source>TFHT01B.kicad_sch</source>
+        <source>TFHT01.kicad_sch</source>
         <comment number="1" value="UAV Humidity and Temperature \n sensor \n "/>
         <comment number="2" value="kaklik  &lt;info@thunderfly.cz&gt;"/>
         <comment number="3" value=""/>
@@ -33,7 +33,9 @@
       <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
       <property name="UST_ID" value="5c70984812875079b91f8bc2"/>
       <property name="Sheetname" value=""/>
-      <property name="Sheetfile" value="TFHT01B.kicad_sch"/>
+      <property name="Sheetfile" value="TFHT01.kicad_sch"/>
+      <property name="ki_description" value="Unpolarized capacitor"/>
+      <property name="ki_keywords" value="cap capacitor"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamps>00000000-0000-0000-0000-00005debf498</tstamps>
     </comp>
@@ -46,7 +48,9 @@
       <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
       <property name="UST_ID" value="5c70984812875079b91f8bbd"/>
       <property name="Sheetname" value=""/>
-      <property name="Sheetfile" value="TFHT01B.kicad_sch"/>
+      <property name="Sheetfile" value="TFHT01.kicad_sch"/>
+      <property name="ki_description" value="Unpolarized capacitor"/>
+      <property name="ki_keywords" value="cap capacitor"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamps>00000000-0000-0000-0000-000059ffc6a8</tstamps>
     </comp>
@@ -59,7 +63,9 @@
       <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
       <property name="UST_ID" value="5c70984812875079b91f8bf2"/>
       <property name="Sheetname" value=""/>
-      <property name="Sheetfile" value="TFHT01B.kicad_sch"/>
+      <property name="Sheetfile" value="TFHT01.kicad_sch"/>
+      <property name="ki_description" value="Unpolarized capacitor"/>
+      <property name="ki_keywords" value="cap capacitor"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamps>00000000-0000-0000-0000-00005562302c</tstamps>
     </comp>
@@ -72,7 +78,9 @@
       <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
       <property name="UST_ID" value="5c70984812875079b91f8bf2"/>
       <property name="Sheetname" value=""/>
-      <property name="Sheetfile" value="TFHT01B.kicad_sch"/>
+      <property name="Sheetfile" value="TFHT01.kicad_sch"/>
+      <property name="ki_description" value="Unpolarized capacitor"/>
+      <property name="ki_keywords" value="cap capacitor"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamps>00000000-0000-0000-0000-00005deabd1a</tstamps>
     </comp>
@@ -85,35 +93,99 @@
       <libsource lib="MLAB_D" part="D_ZENER" description=""/>
       <property name="UST_ID" value="60879d38128750769ee58e48"/>
       <property name="Sheetname" value=""/>
-      <property name="Sheetfile" value="TFHT01B.kicad_sch"/>
+      <property name="Sheetfile" value="TFHT01.kicad_sch"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamps>00000000-0000-0000-0000-000059ffcb7d</tstamps>
     </comp>
     <comp ref="D2">
       <value>LED GREEN</value>
-      <footprint>Mlab_D:LED_1206</footprint>
+      <footprint>Mlab_D:LED_1206_mill</footprint>
       <fields>
         <field name="UST_ID">5c70984412875079b91f8895</field>
       </fields>
       <libsource lib="Device" part="LED" description="Light emitting diode"/>
       <property name="UST_ID" value="5c70984412875079b91f8895"/>
       <property name="Sheetname" value=""/>
-      <property name="Sheetfile" value="TFHT01B.kicad_sch"/>
+      <property name="Sheetfile" value="TFHT01.kicad_sch"/>
+      <property name="ki_description" value="Light emitting diode"/>
+      <property name="ki_keywords" value="LED diode"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamps>963f39b7-38a1-44ed-ac4a-2637ad91de92</tstamps>
     </comp>
     <comp ref="D3">
       <value>LED RED</value>
-      <footprint>Mlab_D:LED_1206</footprint>
+      <footprint>Mlab_D:LED_1206_mill</footprint>
       <fields>
         <field name="UST_ID">5c70984412875079b91f8896</field>
       </fields>
       <libsource lib="Device" part="LED" description="Light emitting diode"/>
       <property name="UST_ID" value="5c70984412875079b91f8896"/>
       <property name="Sheetname" value=""/>
-      <property name="Sheetfile" value="TFHT01B.kicad_sch"/>
+      <property name="Sheetfile" value="TFHT01.kicad_sch"/>
+      <property name="ki_description" value="Light emitting diode"/>
+      <property name="ki_keywords" value="LED diode"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamps>a12baf4f-c76b-4f3a-9cc1-adf92484af3f</tstamps>
+    </comp>
+    <comp ref="H1">
+      <value>Heat insulation</value>
+      <footprint>Mlab_Mechanical:MountingHole_1mm</footprint>
+      <libsource lib="Mechanical" part="MountingHole" description="Mounting Hole without connection"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="TFHT01.kicad_sch"/>
+      <property name="exclude_from_bom"/>
+      <property name="ki_description" value="Mounting Hole without connection"/>
+      <property name="ki_keywords" value="mounting hole"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>56801e6d-c4ab-4f7b-8289-2119a52fa227</tstamps>
+    </comp>
+    <comp ref="H2">
+      <value>Heat insulation</value>
+      <footprint>MountingHole:MountingHole_2mm</footprint>
+      <libsource lib="Mechanical" part="MountingHole" description="Mounting Hole without connection"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="TFHT01.kicad_sch"/>
+      <property name="exclude_from_bom"/>
+      <property name="ki_description" value="Mounting Hole without connection"/>
+      <property name="ki_keywords" value="mounting hole"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>33ab3c40-672b-4aba-b37a-c0cccd048822</tstamps>
+    </comp>
+    <comp ref="H3">
+      <value>Heat insulation</value>
+      <footprint>Mlab_Mechanical:MountingHole_1mm</footprint>
+      <libsource lib="Mechanical" part="MountingHole" description="Mounting Hole without connection"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="TFHT01.kicad_sch"/>
+      <property name="exclude_from_bom"/>
+      <property name="ki_description" value="Mounting Hole without connection"/>
+      <property name="ki_keywords" value="mounting hole"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>54b9d44f-1643-4921-8e3b-2c03405448a7</tstamps>
+    </comp>
+    <comp ref="H4">
+      <value>Heat insulation</value>
+      <footprint>Mlab_Mechanical:MountingHole_1mm</footprint>
+      <libsource lib="Mechanical" part="MountingHole" description="Mounting Hole without connection"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="TFHT01.kicad_sch"/>
+      <property name="exclude_from_bom"/>
+      <property name="ki_description" value="Mounting Hole without connection"/>
+      <property name="ki_keywords" value="mounting hole"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>66b7b3b0-00bb-4640-87b4-6fd813d90142</tstamps>
+    </comp>
+    <comp ref="H5">
+      <value>Heat insulation</value>
+      <footprint>Mlab_Mechanical:MountingHole_1mm</footprint>
+      <libsource lib="Mechanical" part="MountingHole" description="Mounting Hole without connection"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="TFHT01.kicad_sch"/>
+      <property name="exclude_from_bom"/>
+      <property name="ki_description" value="Mounting Hole without connection"/>
+      <property name="ki_keywords" value="mounting hole"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>527e455b-af88-4480-a309-b95af91d418d</tstamps>
     </comp>
     <comp ref="J1">
       <value>SM04B-GHS-TB</value>
@@ -125,7 +197,7 @@
       <property name="UST_id" value=""/>
       <property name="UST_ID" value="5c86273d1287500b4e0280be"/>
       <property name="Sheetname" value=""/>
-      <property name="Sheetfile" value="TFHT01B.kicad_sch"/>
+      <property name="Sheetfile" value="TFHT01.kicad_sch"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamps>cb19bc52-bc73-4faa-b1b5-9d6fa377e0e1</tstamps>
     </comp>
@@ -139,16 +211,94 @@
       <property name="UST_id" value=""/>
       <property name="UST_ID" value="5c86273d1287500b4e0280be"/>
       <property name="Sheetname" value=""/>
-      <property name="Sheetfile" value="TFHT01B.kicad_sch"/>
+      <property name="Sheetfile" value="TFHT01.kicad_sch"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamps>00000000-0000-0000-0000-00005deb9c07</tstamps>
+    </comp>
+    <comp ref="JP1">
+      <value>Address select</value>
+      <footprint>Jumper:SolderJumper-3_P1.3mm_Bridged12_RoundedPad1.0x1.5mm</footprint>
+      <libsource lib="Jumper" part="SolderJumper_3_Bridged12" description="3-pole Solder Jumper, pins 1+2 closed/bridged"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="TFHT01.kicad_sch"/>
+      <property name="exclude_from_bom"/>
+      <property name="ki_description" value="3-pole Solder Jumper, pins 1+2 closed/bridged"/>
+      <property name="ki_keywords" value="Solder Jumper SPDT"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>e1821fe1-099f-4ad8-b410-e79473e6d2c5</tstamps>
+    </comp>
+    <comp ref="M1">
+      <value>M3</value>
+      <footprint>Mlab_Mechanical:dira_3mm</footprint>
+      <libsource lib="MLAB_MECHANICAL" part="HOLE" description=""/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="TFHT01.kicad_sch"/>
+      <property name="exclude_from_bom"/>
+      <property name="ki_keywords" value="HOLE, X, M"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>10215e06-fb9f-418d-a104-540faad4b69c</tstamps>
+    </comp>
+    <comp ref="M2">
+      <value>M3</value>
+      <footprint>Mlab_Mechanical:dira_3mm</footprint>
+      <libsource lib="MLAB_MECHANICAL" part="HOLE" description=""/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="TFHT01.kicad_sch"/>
+      <property name="exclude_from_bom"/>
+      <property name="ki_keywords" value="HOLE, X, M"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>884c0d5f-55e3-4b71-a0e6-b8e3b950a39a</tstamps>
+    </comp>
+    <comp ref="M3">
+      <value>M3</value>
+      <footprint>Mlab_Mechanical:dira_3mm</footprint>
+      <libsource lib="MLAB_MECHANICAL" part="HOLE" description=""/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="TFHT01.kicad_sch"/>
+      <property name="exclude_from_bom"/>
+      <property name="ki_keywords" value="HOLE, X, M"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>e33a1441-a354-4488-9651-c48024c19034</tstamps>
+    </comp>
+    <comp ref="M4">
+      <value>M3</value>
+      <footprint>Mlab_Mechanical:dira_3mm</footprint>
+      <libsource lib="MLAB_MECHANICAL" part="HOLE" description=""/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="TFHT01.kicad_sch"/>
+      <property name="exclude_from_bom"/>
+      <property name="ki_keywords" value="HOLE, X, M"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>079e2952-dbd0-494d-976a-733b1acff741</tstamps>
+    </comp>
+    <comp ref="M5">
+      <value>M3</value>
+      <footprint>Mlab_Mechanical:dira_3mm</footprint>
+      <libsource lib="MLAB_MECHANICAL" part="HOLE" description=""/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="TFHT01.kicad_sch"/>
+      <property name="exclude_from_bom"/>
+      <property name="ki_keywords" value="HOLE, X, M"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>cd947d58-e0cf-468b-8ef8-309e4589cc18</tstamps>
+    </comp>
+    <comp ref="M6">
+      <value>M3</value>
+      <footprint>Mlab_Mechanical:dira_3mm</footprint>
+      <libsource lib="MLAB_MECHANICAL" part="HOLE" description=""/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="TFHT01.kicad_sch"/>
+      <property name="exclude_from_bom"/>
+      <property name="ki_keywords" value="HOLE, X, M"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>96e1e967-500b-446a-91f0-7fdf32ac9036</tstamps>
     </comp>
     <comp ref="M7">
       <value>CAP-SF2</value>
       <footprint>Mlab_Mechanical:CAP-SF2</footprint>
       <libsource lib="MLAB_MECHANICAL" part="CAP-SF2" description=""/>
       <property name="Sheetname" value=""/>
-      <property name="Sheetfile" value="TFHT01B.kicad_sch"/>
+      <property name="Sheetfile" value="TFHT01.kicad_sch"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamps>d82cfbc6-9bf6-4272-bccf-f49d52580b2b</tstamps>
     </comp>
@@ -162,7 +312,9 @@
       <libsource lib="Transistor_BJT" part="BC817" description="0.8A Ic, 45V Vce, NPN Transistor, SOT-23"/>
       <property name="UST_ID" value="5c70984712875079b91f8aec"/>
       <property name="Sheetname" value=""/>
-      <property name="Sheetfile" value="TFHT01B.kicad_sch"/>
+      <property name="Sheetfile" value="TFHT01.kicad_sch"/>
+      <property name="ki_description" value="0.8A Ic, 45V Vce, NPN Transistor, SOT-23"/>
+      <property name="ki_keywords" value="NPN Transistor"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamps>06c6d896-7944-48b1-89fa-7f92f8e916db</tstamps>
     </comp>
@@ -175,7 +327,9 @@
       <libsource lib="Device" part="R" description="Resistor"/>
       <property name="UST_ID" value="5c70984512875079b91f8957"/>
       <property name="Sheetname" value=""/>
-      <property name="Sheetfile" value="TFHT01B.kicad_sch"/>
+      <property name="Sheetfile" value="TFHT01.kicad_sch"/>
+      <property name="ki_description" value="Resistor"/>
+      <property name="ki_keywords" value="R res resistor"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamps>7d9ac06d-0387-49a1-8365-e9ad3541803c</tstamps>
     </comp>
@@ -188,7 +342,9 @@
       <libsource lib="Device" part="R" description="Resistor"/>
       <property name="UST_ID" value="5c70984512875079b91f8956"/>
       <property name="Sheetname" value=""/>
-      <property name="Sheetfile" value="TFHT01B.kicad_sch"/>
+      <property name="Sheetfile" value="TFHT01.kicad_sch"/>
+      <property name="ki_description" value="Resistor"/>
+      <property name="ki_keywords" value="R res resistor"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamps>5ca4b185-b50a-4c7e-b3f2-4d48fda4441d</tstamps>
     </comp>
@@ -201,7 +357,9 @@
       <libsource lib="Device" part="R" description="Resistor"/>
       <property name="UST_ID" value="5c70984512875079b91f8962"/>
       <property name="Sheetname" value=""/>
-      <property name="Sheetfile" value="TFHT01B.kicad_sch"/>
+      <property name="Sheetfile" value="TFHT01.kicad_sch"/>
+      <property name="ki_description" value="Resistor"/>
+      <property name="ki_keywords" value="R res resistor"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamps>00000000-0000-0000-0000-000059ffb143</tstamps>
     </comp>
@@ -214,7 +372,9 @@
       <libsource lib="Device" part="R" description="Resistor"/>
       <property name="UST_ID" value="5c70984512875079b91f8957"/>
       <property name="Sheetname" value=""/>
-      <property name="Sheetfile" value="TFHT01B.kicad_sch"/>
+      <property name="Sheetfile" value="TFHT01.kicad_sch"/>
+      <property name="ki_description" value="Resistor"/>
+      <property name="ki_keywords" value="R res resistor"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamps>49ca790a-7c85-40e9-b710-e24c90dea24f</tstamps>
     </comp>
@@ -227,7 +387,9 @@
       <libsource lib="Device" part="R" description="Resistor"/>
       <property name="UST_ID" value="5c70984512875079b91f8962"/>
       <property name="Sheetname" value=""/>
-      <property name="Sheetfile" value="TFHT01B.kicad_sch"/>
+      <property name="Sheetfile" value="TFHT01.kicad_sch"/>
+      <property name="ki_description" value="Resistor"/>
+      <property name="ki_keywords" value="R res resistor"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamps>00000000-0000-0000-0000-000059ffb1aa</tstamps>
     </comp>
@@ -241,7 +403,9 @@
       <libsource lib="Sensor_Humidity" part="SHT35A-DIS" description="I²C humidity and temperature sensor, ±1.5%RH, ±0.2°C, AEQ-100, DFN-8"/>
       <property name="UST_ID" value="5c70984612875079b91f89e4"/>
       <property name="Sheetname" value=""/>
-      <property name="Sheetfile" value="TFHT01B.kicad_sch"/>
+      <property name="Sheetfile" value="TFHT01.kicad_sch"/>
+      <property name="ki_description" value="I²C humidity and temperature sensor, ±1.5%RH, ±0.2°C, AEQ-100, DFN-8"/>
+      <property name="ki_keywords" value="digital temperature humidity automotive i2c"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamps>a7805256-ab76-4b69-8748-d5f6cd3c727a</tstamps>
     </comp>
@@ -255,7 +419,9 @@
       <libsource lib="Regulator_Linear" part="MIC5504-3.3YM5" description="300mA Low-dropout Voltage Regulator, Vout 3.3V, Vin up to 5.5V, SOT-23"/>
       <property name="UST_ID" value="5c7255e81287500b4e112ea2"/>
       <property name="Sheetname" value=""/>
-      <property name="Sheetfile" value="TFHT01B.kicad_sch"/>
+      <property name="Sheetfile" value="TFHT01.kicad_sch"/>
+      <property name="ki_description" value="300mA Low-dropout Voltage Regulator, Vout 3.3V, Vin up to 5.5V, SOT-23"/>
+      <property name="ki_keywords" value="Micrel LDO voltage regulator"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamps>00000000-0000-0000-0000-00005de928cf</tstamps>
     </comp>
@@ -472,6 +638,7 @@
     <net code="1" name="+3V3">
       <node ref="C1" pin="1" pintype="passive"/>
       <node ref="C5" pin="1" pintype="passive"/>
+      <node ref="JP1" pin="3" pinfunction="B" pintype="passive"/>
       <node ref="R10" pin="1" pintype="passive"/>
       <node ref="R3" pin="1" pintype="passive"/>
       <node ref="U1" pin="5" pinfunction="VDD" pintype="power_in"/>
@@ -481,10 +648,10 @@
       <node ref="C3" pin="1" pintype="passive"/>
       <node ref="C4" pin="1" pintype="passive"/>
       <node ref="D1" pin="1" pinfunction="K" pintype="passive"/>
-      <node ref="D3" pin="2" pinfunction="A" pintype="passive"/>
       <node ref="J1" pin="1" pintype="input"/>
       <node ref="J2" pin="1" pintype="input"/>
       <node ref="R1" pin="1" pintype="passive"/>
+      <node ref="R4" pin="1" pintype="passive"/>
       <node ref="U3" pin="1" pinfunction="VIN" pintype="power_in"/>
       <node ref="U3" pin="3" pinfunction="EN" pintype="input"/>
     </net>
@@ -515,35 +682,55 @@
       <node ref="J1" pin="MP" pintype="input"/>
       <node ref="J2" pin="4" pintype="input"/>
       <node ref="J2" pin="MP" pintype="input"/>
+      <node ref="JP1" pin="1" pinfunction="A" pintype="passive"/>
       <node ref="Q1" pin="2" pinfunction="E" pintype="passive"/>
       <node ref="U1" pin="7" pinfunction="R" pintype="passive"/>
       <node ref="U1" pin="8" pinfunction="VSS" pintype="power_in"/>
       <node ref="U1" pin="9" pinfunction="VSS" pintype="passive"/>
       <node ref="U3" pin="2" pinfunction="GND" pintype="power_in"/>
     </net>
-    <net code="7" name="Net-(D2-Pad2)">
+    <net code="7" name="Net-(D2-A)">
       <node ref="D2" pin="2" pinfunction="A" pintype="passive"/>
       <node ref="R1" pin="2" pintype="passive"/>
     </net>
-    <net code="8" name="Net-(D3-Pad1)">
-      <node ref="D3" pin="1" pinfunction="K" pintype="passive"/>
-      <node ref="R4" pin="1" pintype="passive"/>
+    <net code="8" name="Net-(D3-A)">
+      <node ref="D3" pin="2" pinfunction="A" pintype="passive"/>
+      <node ref="R4" pin="2" pintype="passive"/>
     </net>
-    <net code="9" name="Net-(JP1-Pad2)">
+    <net code="9" name="Net-(D3-K)">
+      <node ref="D3" pin="1" pinfunction="K" pintype="passive"/>
+      <node ref="Q1" pin="3" pinfunction="C" pintype="passive"/>
+    </net>
+    <net code="10" name="Net-(JP1-C)">
+      <node ref="JP1" pin="2" pinfunction="C" pintype="passive"/>
       <node ref="U1" pin="2" pinfunction="ADDR" pintype="input"/>
     </net>
-    <net code="10" name="Net-(Q1-Pad1)">
+    <net code="11" name="Net-(Q1-B)">
       <node ref="Q1" pin="1" pinfunction="B" pintype="input"/>
       <node ref="R2" pin="2" pintype="passive"/>
     </net>
-    <net code="11" name="Net-(Q1-Pad3)">
-      <node ref="Q1" pin="3" pinfunction="C" pintype="passive"/>
-      <node ref="R4" pin="2" pintype="passive"/>
+    <net code="12" name="unconnected-(M1-Pad1)">
+      <node ref="M1" pin="1" pintype="input+no_connect"/>
     </net>
-    <net code="18" name="unconnected-(U1-Pad6)">
+    <net code="13" name="unconnected-(M2-Pad1)">
+      <node ref="M2" pin="1" pintype="input+no_connect"/>
+    </net>
+    <net code="14" name="unconnected-(M3-Pad1)">
+      <node ref="M3" pin="1" pintype="input+no_connect"/>
+    </net>
+    <net code="15" name="unconnected-(M4-Pad1)">
+      <node ref="M4" pin="1" pintype="input+no_connect"/>
+    </net>
+    <net code="16" name="unconnected-(M5-Pad1)">
+      <node ref="M5" pin="1" pintype="input+no_connect"/>
+    </net>
+    <net code="17" name="unconnected-(M6-Pad1)">
+      <node ref="M6" pin="1" pintype="input+no_connect"/>
+    </net>
+    <net code="18" name="unconnected-(U1-~{RESET}-Pad6)">
       <node ref="U1" pin="6" pinfunction="~{RESET}" pintype="input+no_connect"/>
     </net>
-    <net code="19" name="unconnected-(U3-Pad4)">
+    <net code="19" name="unconnected-(U3-NC-Pad4)">
       <node ref="U3" pin="4" pinfunction="NC" pintype="no_connect"/>
     </net>
   </nets>
