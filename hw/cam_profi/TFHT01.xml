@@ -2,7 +2,7 @@
 <export version="E">
   <design>
     <source>/github/workspace/hw/sch_pcb/TFHT01.kicad_sch</source>
-    <date>Sun Sep 24 12:08:38 2023</date>
+    <date>Sun Sep 24 13:22:19 2023</date>
     <tool>Eeschema 7.0.7-7.0.7~ubuntu23.04.1</tool>
     <sheet number="1" name="/" tstamps="/">
       <title_block>
@@ -141,7 +141,7 @@
     </comp>
     <comp ref="H2">
       <value>Heat insulation</value>
-      <footprint>MountingHole:MountingHole_2mm</footprint>
+      <footprint>Mlab_Mechanical:MountingHole_1mm</footprint>
       <libsource lib="Mechanical" part="MountingHole" description="Mounting Hole without connection"/>
       <property name="Sheetname" value=""/>
       <property name="Sheetfile" value="TFHT01.kicad_sch"/>
@@ -186,6 +186,42 @@
       <property name="ki_keywords" value="mounting hole"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamps>527e455b-af88-4480-a309-b95af91d418d</tstamps>
+    </comp>
+    <comp ref="H6">
+      <value>Heat insulation</value>
+      <footprint>Mlab_Mechanical:MountingHole_1mm</footprint>
+      <libsource lib="Mechanical" part="MountingHole" description="Mounting Hole without connection"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="TFHT01.kicad_sch"/>
+      <property name="exclude_from_bom"/>
+      <property name="ki_description" value="Mounting Hole without connection"/>
+      <property name="ki_keywords" value="mounting hole"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>e284e302-c864-4fd6-8274-277067e3e751</tstamps>
+    </comp>
+    <comp ref="H7">
+      <value>Heat insulation</value>
+      <footprint>Mlab_Mechanical:MountingHole_1mm</footprint>
+      <libsource lib="Mechanical" part="MountingHole" description="Mounting Hole without connection"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="TFHT01.kicad_sch"/>
+      <property name="exclude_from_bom"/>
+      <property name="ki_description" value="Mounting Hole without connection"/>
+      <property name="ki_keywords" value="mounting hole"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>95c42dfd-70f7-42d3-a193-57443d6c7a23</tstamps>
+    </comp>
+    <comp ref="H8">
+      <value>Heat insulation</value>
+      <footprint>Mlab_Mechanical:MountingHole_1mm</footprint>
+      <libsource lib="Mechanical" part="MountingHole" description="Mounting Hole without connection"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="TFHT01.kicad_sch"/>
+      <property name="exclude_from_bom"/>
+      <property name="ki_description" value="Mounting Hole without connection"/>
+      <property name="ki_keywords" value="mounting hole"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>ecef95bd-537f-4460-ab6e-2369f45e7445</tstamps>
     </comp>
     <comp ref="J1">
       <value>SM04B-GHS-TB</value>
