@@ -2458,7 +2458,7 @@
     (property "Datasheet" "https://www.sensirion.com/fileadmin/user_upload/customers/sensirion/Dokumente/2_Humidity_Sensors/Datasheets/Sensirion_Humidity_Sensors_SHT3xA_Datasheet.pdf" (at 128.27 96.52 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "UST_ID" "5c70984612875079b91f89e4" (at 128.27 97.79 0)
+    (property "UST_ID" "65103c42462c6d9e72054b8e" (at 128.27 97.79 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (pin "1" (uuid 47bccf9e-81f4-4228-8441-29d66d14f48f))
