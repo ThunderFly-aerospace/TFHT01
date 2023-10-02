@@ -2,7 +2,7 @@
 <export version="E">
   <design>
     <source>/github/workspace/hw/sch_pcb/TFHT01.kicad_sch</source>
-    <date>Sun Sep 24 13:44:08 2023</date>
+    <date>Mon Oct  2 12:44:16 2023</date>
     <tool>Eeschema 7.0.7-7.0.7~ubuntu23.04.1</tool>
     <sheet number="1" name="/" tstamps="/">
       <title_block>
@@ -373,10 +373,10 @@
       <value>10k</value>
       <footprint>Mlab_R:SMD-0603</footprint>
       <fields>
-        <field name="UST_ID">5c70984512875079b91f8956</field>
+        <field name="UST_ID">5c70984512875079b91f8962</field>
       </fields>
       <libsource lib="Device" part="R" description="Resistor"/>
-      <property name="UST_ID" value="5c70984512875079b91f8956"/>
+      <property name="UST_ID" value="5c70984512875079b91f8962"/>
       <property name="Sheetname" value=""/>
       <property name="Sheetfile" value="TFHT01.kicad_sch"/>
       <property name="ki_description" value="Resistor"/>
