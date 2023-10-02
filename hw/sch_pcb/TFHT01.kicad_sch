@@ -2144,7 +2144,7 @@
     (property "Datasheet" "~" (at 183.515 127 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "UST_ID" "5c70984512875079b91f8956" (at 183.515 127 0)
+    (property "UST_ID" "5c70984512875079b91f8962" (at 183.515 127 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (pin "1" (uuid 4b2fba8f-aac5-4325-b2dc-920faaead8ea))
