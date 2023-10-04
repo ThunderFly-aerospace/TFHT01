@@ -1673,7 +1673,7 @@
         (effects (font (size 1 1) (thickness 0.15)) (justify mirror))
       (tstamp 6999550c-f78a-4aae-9243-1b3881f5bb3b)
     )
-    (fp_text value "SHT35A-DIS" (at 0 -2.5 90) (layer "B.Fab")
+    (fp_text value "SHT35A-DIS" (at 0 -2.5 90) (layer "B.Fab") hide
         (effects (font (size 1 1) (thickness 0.15)) (justify mirror))
       (tstamp a2a33a3d-c501-4e33-b67b-7d07ef8aa4a7)
     )
@@ -1772,7 +1772,7 @@
         (effects (font (size 1 1) (thickness 0.15)) (justify mirror))
       (tstamp 1d30952f-a3e2-4100-a346-77971060b594)
     )
-    (fp_text user "${REFERENCE}" (at -0.101 -1.12 90) (layer "B.Fab")
+    (fp_text user "${REFERENCE}" (at -1.647 0.073 90) (layer "B.Fab")
         (effects (font (size 1 1) (thickness 0.15)) (justify mirror))
       (tstamp 560e5342-80c0-4e19-91d5-865f4d047a15)
     )
@@ -2537,7 +2537,7 @@
         (effects (font (size 1 1) (thickness 0.15)) (justify mirror))
       (tstamp 9bddaeaa-2ebc-4de6-b1f0-d0186a78742e)
     )
-    (fp_text value "CAP-SF2" (at 0.404 -4.281 unlocked) (layer "B.Fab")
+    (fp_text value "CAP-SF2" (at 0.404 -4.281 unlocked) (layer "B.Fab") hide
         (effects (font (size 1 1) (thickness 0.15)) (justify mirror))
       (tstamp 463a7f2a-1de0-4b6a-8cee-fc6f4bee1da1)
     )
