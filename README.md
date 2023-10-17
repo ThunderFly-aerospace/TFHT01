@@ -46,3 +46,49 @@ The TFHT01 sensor could be used for [direct atmospheric sounding](https://en.wik
 ## Usage in PX4 
 The sensor is currently supported by the PX4 autopilot. Multiple sensors can be connected to one autopilot. The measured data are immediately sent to the ground station and they are also logged in the onboard ulog file. Sensor support can be enabled by setting the [SENS_EN_SHT3X](http://docs.px4.io/master/en/advanced_config/parameter_reference.html#SENS_EN_SHT3X) parameter to 1.
 
+
+### Driver Commands Examples
+
+CLI usage example:
+
+    sht3x start -X
+
+Start the sensor driver on the external bus
+
+    sht3x status
+
+Print driver status
+
+    sht3x values
+
+Print last measured values
+
+    sht3x reset
+
+Reinitialize senzor, reset flags
+
+# Driver Usage
+
+´´´
+sht3x <command> [arguments...]
+ Commands:
+   start
+     [-I]        Internal I2C bus(es)
+     [-X]        External I2C bus(es)
+     [-b <val>]  board-specific bus (default=all) (external SPI: n-th bus
+                 (default=1))
+     [-f <val>]  bus frequency in kHz
+     [-q]        quiet startup (no message if no device found)
+     [-a <val>]  I2C address
+                 default: 68
+     [-k]        if initialization (probing) fails, keep retrying periodically
+
+   stop
+
+   status        print status info
+
+   values        Print actual data
+
+   reset         Reinitialize sensor
+´´´
+
