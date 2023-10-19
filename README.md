@@ -17,7 +17,7 @@ The TFHT01 is commercially available from [ThunderFly s.r.o.](https://www.thunde
 
 | Parameter | Value | Description |
 |-----------|-------|-------------|
-| Sensing element | [SHT35](https://sensirion.com/media/documents/213E6A3B/63A5A569/Datasheet_SHT3x_DIS.pdf) | Other possible sensors SHT30, SHT31 |
+| Sensing element | [SHT35](https://sensirion.com/media/documents/213E6A3B/63A5A569/Datasheet_SHT3x_DIS.pdf) | Other possible sensors are SHT30 or SHT31 |
 | Typical accuracy | 1.5 %RH and 0.1 °C | |
 | Repeatability | 0.15 %RH , 0.08 °C | The stated repeatability is 3 times the standard deviation (3σ) of multiple consecutive measurements at constant ambient conditions. |
 | Operating temperature range| 0 °C - +65 °C | Sensor physically measures in range -40°C to +120°C with reduced accuracy |
@@ -41,9 +41,10 @@ The TFHT01 sensor could be used for [direct atmospheric sounding](https://en.wik
 
 ## Schematics
 
-[![Schematics](/doc/gen/TFHT01B-schematic.svg)](/doc/gen/TFHT01B-schematic.pdf)
+[![Schematics](/doc/gen/TFHT01-schematic.svg)](/doc/gen/TFHT01-schematic.pdf)
 
-## Usage in PX4 
+## Usage in PX4 autopilot firmware
+
 The sensor is currently supported by the PX4 autopilot. Multiple sensors can be connected to one autopilot. The measured data are immediately sent to the ground station and they are also logged in the onboard ulog file. Sensor support can be enabled by setting the [SENS_EN_SHT3X](http://docs.px4.io/master/en/advanced_config/parameter_reference.html#SENS_EN_SHT3X) parameter to 1.
 
 
@@ -61,15 +62,15 @@ Print driver status
 
     sht3x values
 
-Print last measured values
+Print the last measured values
 
     sht3x reset
 
 Reinitialize senzor, reset flags
 
-# Driver Usage
+### PX4 Driver Usage
 
-´´´
+```
 sht3x <command> [arguments...]
  Commands:
    start
@@ -81,7 +82,7 @@ sht3x <command> [arguments...]
      [-q]        quiet startup (no message if no device found)
      [-a <val>]  I2C address
                  default: 68
-     [-k]        if initialization (probing) fails, keep retrying periodically
+     [-k]        If initialization (probing) fails, keep retrying periodically
 
    stop
 
@@ -90,5 +91,5 @@ sht3x <command> [arguments...]
    values        Print actual data
 
    reset         Reinitialize sensor
-´´´
+```
 
