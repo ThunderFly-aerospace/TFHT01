@@ -21,7 +21,7 @@ The TFHT01 is commercially available from [ThunderFly s.r.o.](https://www.thunde
 | Typical accuracy | 1.5 %RH and 0.1 °C | |
 | Repeatability | 0.15 %RH , 0.08 °C | The stated repeatability is 3 times the standard deviation (3σ) of multiple consecutive measurements at constant ambient conditions. |
 | Operating temperature range| 0 °C - +65 °C | Sensor physically measures in range -40°C to +120°C with reduced accuracy |
-| Operating humidity range| 0-100 % | At humidity above 80% the performance of the sensor could be degraded in case of prolonged time periods |
+| Operating humidity range| 0-100 % | At humidity above 80% the performance of the sensor could be degraded in case of prolonged periods |
 | I2C connector | 4-pin JST-GH | The second connector could be installed on the opposite side |
 | I2C address | 0x44 default | By switching of JP1 is possible change address to 0x45 |
 | Storage temperature range| -20 °C - +40 °C |  |
@@ -93,3 +93,10 @@ sht3x <command> [arguments...]
    reset         Reinitialize sensor
 ```
 
+## FAQ 
+
+### I am not able to locate SENS_EN_SHT3X parameter in QGC
+
+Unfortunately, the PX4 developers have disabled the compilation of the TFHT01 sensor driver in the default release versions of the firmware due to memory constraints of the autopilot hardware. To compile the driver, you will need to modify the Kconfig configuration using the boardconfig tool (make px4_fmu-v5_default boardconfig).
+Please follow the instructions on [PX4 menuconfig setup](https://docs.px4.io/main/en/hardware/porting_guide_config.html#px4-menuconfig-setup) In the configuration tree, locate ```Drivers -> Hygrometers``` and enable ```HYGROMETER SHT3x```.
+After setting up the firmware with these changes, compile it and upload it to your autopilot. Then you should see SENS_EN_SHT3x parameter. 
