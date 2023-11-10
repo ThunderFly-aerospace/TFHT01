@@ -4,7 +4,7 @@
 
 The TFHT01 hygrometer sensor offers flexible integration options. It can be directly connected to a Pixhawk autopilot with PX4 firmware, or it can be used as a sensor for the [TF-ATMON monitoring system](https://www.thunderfly.cz/tf-atmon.html).
 
-Sensors mounted on UAVs can be used for a variety of purposes. Basically, TFHT01 can measure air temperature and humidity, which can be used for meteorological purposes to estimate whether icing may form on aerodynamic surfaces. It could also be used to determine if the flight is conducted within the operating range of the drone. Another use can be to measure the temperature of selected UAV components, for example, the temperature of batteries, ESC, motor, or some bearings. 
+Sensors mounted on UAVs can be used for a variety of purposes. TFHT01 can measure air temperature and humidity, which can be used for meteorological purposes to estimate whether icing may form on aerodynamic surfaces. It could also be used to determine if the flight is conducted within the operating range of the drone. Another use can be to measure the temperature of selected UAV components, for example, the temperature of batteries, ESC, motor, or some bearings. 
 
 ![TFHT01A top view](/doc/img/TFHT01A2.jpg)
 
@@ -45,7 +45,7 @@ The TFHT01 sensor could be used for [direct atmospheric sounding](https://en.wik
 
 ## Usage in PX4 autopilot firmware
 
-The sensor is currently supported by the PX4 autopilot. Multiple sensors can be connected to one autopilot. The measured data are immediately sent to the ground station and they are also logged in the onboard ulog file. Sensor support can be enabled by setting the [SENS_EN_SHT3X](http://docs.px4.io/master/en/advanced_config/parameter_reference.html#SENS_EN_SHT3X) parameter to 1.
+The PX4 autopilot firmware supports the sensor. Multiple sensors can be connected to one autopilot. The measured data are immediately sent to the ground station and they are also logged in the onboard ulog file. Sensor support can be enabled by setting the [SENS_EN_SHT3X](http://docs.px4.io/master/en/advanced_config/parameter_reference.html#SENS_EN_SHT3X) parameter to 1.
 
 
 ### Driver Commands Examples
@@ -93,10 +93,14 @@ sht3x <command> [arguments...]
    reset         Reinitialize sensor
 ```
 
+## Usage in Ardupilot firmware
+
+In the Ardupilot firmware, the corresponding sht3x driver for TFHT01 is currently missing. The contributions are welcomed. 
+
 ## FAQ 
 
-### I am not able to locate SENS_EN_SHT3X parameter in QGC
+### I am not able to find the SENS_EN_SHT3X parameter in QGC
 
-Unfortunately, the PX4 developers have disabled the compilation of the TFHT01 sensor driver in the default release versions of the firmware due to memory constraints of the autopilot hardware. To compile the driver, you will need to modify the Kconfig configuration using the boardconfig tool (make px4_fmu-v5_default boardconfig).
+Unfortunately, the PX4 developers have disabled the compilation of the TFHT01 sensor driver in the default release versions of the firmware due to memory constraints of the autopilot hardware. To compile the driver, you must modify the Kconfig configuration using the boardconfig tool (make px4_fmu-v5_default boardconfig).
 Please follow the instructions on [PX4 menuconfig setup](https://docs.px4.io/main/en/hardware/porting_guide_config.html#px4-menuconfig-setup) In the configuration tree, locate ```Drivers -> Hygrometers``` and enable ```HYGROMETER SHT3x```.
-After setting up the firmware with these changes, compile it and upload it to your autopilot. Then you should see SENS_EN_SHT3x parameter. 
+After setting up the firmware with these changes, compile it and upload it to your autopilot. Then you should see the SENS_EN_SHT3x parameter. 
