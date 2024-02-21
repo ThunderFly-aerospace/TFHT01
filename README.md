@@ -97,10 +97,6 @@ sht3x <command> [arguments...]
 
 In the Ardupilot firmware, the corresponding sht3x driver for TFHT01 is currently missing. The contributions are welcomed. 
 
-## FAQ 
+## Resources
 
-### I am not able to find the SENS_EN_SHT3X parameter in QGC
-
-Unfortunately, the PX4 developers have disabled the compilation of the TFHT01 sensor driver in the default release versions of the firmware due to memory constraints of the autopilot hardware. To compile the driver, you must modify the Kconfig configuration using the boardconfig tool (make px4_fmu-v5_default boardconfig).
-Please follow the instructions on [PX4 menuconfig setup](https://docs.px4.io/main/en/hardware/porting_guide_config.html#px4-menuconfig-setup) In the configuration tree, locate ```Drivers -> Hygrometers``` and enable ```HYGROMETER SHT3x```.
-After setting up the firmware with these changes, compile it and upload it to your autopilot. Then you should see the SENS_EN_SHT3x parameter. 
+  * [ThunderFly TFHT01 documentation page](https://docs.thunderfly.cz/avionics/TFHT01/)
