@@ -10,7 +10,7 @@ Sensors mounted on UAVs can be used for a variety of purposes. TFHT01 can measur
 
 ## Where to get it?
 
-The TFHT01 is commercially available from [ThunderFly s.r.o.](https://www.thunderfly.cz/). For a commercial quotation, contact us by email at info@thunderfly.cz or shop at our [Tindie store](https://www.tindie.com/products/thunderfly/tfht01-aerial-hygrometer-and-thermometer/).
+The TFHT01 is commercially available from [ThunderFly s.r.o.](https://www.thunderfly.cz/). For a commercial quotation or support, contact us by email at sale@thunderfly.cz or shop at [Tindie store](https://www.tindie.com/products/thunderfly/tfht01-aerial-hygrometer-and-thermometer/).
 
 
 ## Parameters
@@ -100,3 +100,5 @@ In the Ardupilot firmware, the corresponding sht3x driver for TFHT01 is currentl
 ## Resources
 
   * [ThunderFly TFHT01 documentation page](https://docs.thunderfly.cz/avionics/TFHT01/)
+  * [Store](https://www.tindie.com/products/26354/)
+  * [Contact details](https://www.thunderfly.cz/contact-us.html)
