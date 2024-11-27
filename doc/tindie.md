@@ -33,11 +33,11 @@ Furthermore, the sensor has a specific construction that makes it possible to pl
 
 ### Compatibility with autopilots
 
-Our sensor is fully compatible with the dronecode standards. In terms of software, the sensor is supported by [PX4 autopilot](https://px4.io/). The driver is programmed as a so-called multi-instance. Thanks to this it is possible to connect multiple TFHT01 sensors to the autopilot (they can be located in different parts of the drone or measure data from different drone’s components). This should be done with respect to I2C bus properties, e.g. requirement of [different addresses for each device on the bus](https://www.tindie.com/products/thunderfly/tfi2cadt01-i2c-address-translator/).
+Our sensor is fully compatible with the dronecode standards. In terms of software, the sensor is supported by [PX4 autopilot](https://px4.io/). The driver is programmed as a so-called multi-instance. Thanks to this it is possible to connect multiple TFHT01 sensors to the autopilot (they can be located in different parts of the drone or measure data from different drone’s components). This should be done concerning I2C bus properties, e.g. requirement of [different addresses for each device on the bus](https://www.tindie.com/products/thunderfly/tfi2cadt01-i2c-address-translator/).
 
 ### Use with PX4
 
-Complete settings and driver options under PX4 can be found in the [official documentation](https://docs.px4.io/main/en/modules/modules_driver.html#sht3x).
+Complete settings and driver options under PX4 can be found in the [documentation](https://docs.px4.io/main/en/modules/modules_driver.html#sht3x).
 
 To start the driver automatically it is only necessary to connect the sensor to any I2C port and set the `SENS_EN_SHT3x` parameter to 1 (enabled). The sensor should initialize during the next start. The prerequisite is to use the PX4 firmware version newer than 2022/03.
 
@@ -51,8 +51,8 @@ The sensor can be used outside of drones and PX4 devices as well. The I2C interf
 
 ### What’s included?
 
-- 1x TFHT01A with SHT35 sensor mounted
-- 1x JST-GH 4-pin I2C cable in accordance to [cable style](https://docs.px4.io/master/en/assembly/cable_wiring.html#i2c-cables), Optionally
+- 1x TFHT01 with [SHT35 sensor with PTFE membrane](https://sensirion.com/media/documents/9D103E42/61641F0F/Sensirion_Humidity_Sensors_SHT3x_Datasheet_Filter_Membrane.pdf)
+- Optionally 1x JST-GH 4-pin I2C cable in accordance to [cable style](https://docs.px4.io/main/en/assembly/cable_wiring.html#i2c-cables)
 
 # Product changelog
 The product is gradually evolving and improving based on user requirements. Currently (as of 11/2024), the TFHT01B revision is being shipped. In the development process, we keep backward compatibility, for example by keeping the same form factor or communication interface. The complete list of changes is in [releases](https://github.com/ThunderFly-aerospace/TFHT01/releases).
