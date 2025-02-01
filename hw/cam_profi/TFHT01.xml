@@ -2,8 +2,8 @@
 <export version="E">
   <design>
     <source>/github/workspace/hw/sch_pcb/TFHT01.kicad_sch</source>
-    <date>Mon Nov 13 01:10:29 2023</date>
-    <tool>Eeschema 7.0.8-7.0.8~ubuntu23.04.1</tool>
+    <date>2025-02-01T22:01:22+0000</date>
+    <tool>Eeschema 8.0.8+1</tool>
     <sheet number="1" name="/" tstamps="/">
       <title_block>
         <title>TFHT01B</title>
@@ -29,13 +29,16 @@
       <footprint>Mlab_R:SMD-0603</footprint>
       <fields>
         <field name="UST_ID">5c70984812875079b91f8bc2</field>
+        <field name="Footprint">Mlab_R:SMD-0603</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
       </fields>
       <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
       <property name="UST_ID" value="5c70984812875079b91f8bc2"/>
       <property name="Sheetname" value=""/>
       <property name="Sheetfile" value="TFHT01.kicad_sch"/>
-      <property name="ki_description" value="Unpolarized capacitor"/>
       <property name="ki_keywords" value="cap capacitor"/>
+      <property name="ki_fp_filters" value="C_*"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamps>00000000-0000-0000-0000-00005debf498</tstamps>
     </comp>
@@ -44,13 +47,16 @@
       <footprint>Mlab_R:SMD-0805</footprint>
       <fields>
         <field name="UST_ID">5c70984812875079b91f8bbd</field>
+        <field name="Footprint">Mlab_R:SMD-0805</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
       </fields>
       <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
       <property name="UST_ID" value="5c70984812875079b91f8bbd"/>
       <property name="Sheetname" value=""/>
       <property name="Sheetfile" value="TFHT01.kicad_sch"/>
-      <property name="ki_description" value="Unpolarized capacitor"/>
       <property name="ki_keywords" value="cap capacitor"/>
+      <property name="ki_fp_filters" value="C_*"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamps>00000000-0000-0000-0000-000059ffc6a8</tstamps>
     </comp>
@@ -59,13 +65,16 @@
       <footprint>Mlab_R:SMD-0603</footprint>
       <fields>
         <field name="UST_ID">5c70984812875079b91f8bf2</field>
+        <field name="Footprint">Mlab_R:SMD-0603</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
       </fields>
       <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
       <property name="UST_ID" value="5c70984812875079b91f8bf2"/>
       <property name="Sheetname" value=""/>
       <property name="Sheetfile" value="TFHT01.kicad_sch"/>
-      <property name="ki_description" value="Unpolarized capacitor"/>
       <property name="ki_keywords" value="cap capacitor"/>
+      <property name="ki_fp_filters" value="C_*"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamps>00000000-0000-0000-0000-00005562302c</tstamps>
     </comp>
@@ -74,13 +83,16 @@
       <footprint>Mlab_R:SMD-0603</footprint>
       <fields>
         <field name="UST_ID">5c70984812875079b91f8bf2</field>
+        <field name="Footprint">Mlab_R:SMD-0603</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
       </fields>
       <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
       <property name="UST_ID" value="5c70984812875079b91f8bf2"/>
       <property name="Sheetname" value=""/>
       <property name="Sheetfile" value="TFHT01.kicad_sch"/>
-      <property name="ki_description" value="Unpolarized capacitor"/>
       <property name="ki_keywords" value="cap capacitor"/>
+      <property name="ki_fp_filters" value="C_*"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamps>00000000-0000-0000-0000-00005deabd1a</tstamps>
     </comp>
@@ -89,11 +101,15 @@
       <footprint>Diode_SMD:D_SOD-523</footprint>
       <fields>
         <field name="UST_ID">60879d38128750769ee58e48</field>
+        <field name="Footprint">Diode_SMD:D_SOD-523</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
       </fields>
       <libsource lib="MLAB_D" part="D_ZENER" description=""/>
       <property name="UST_ID" value="60879d38128750769ee58e48"/>
       <property name="Sheetname" value=""/>
       <property name="Sheetfile" value="TFHT01.kicad_sch"/>
+      <property name="ki_fp_filters" value="D? SO* SM*"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamps>00000000-0000-0000-0000-000059ffcb7d</tstamps>
     </comp>
@@ -102,13 +118,16 @@
       <footprint>Mlab_D:LED_1206_mill</footprint>
       <fields>
         <field name="UST_ID">5c70984412875079b91f8895</field>
+        <field name="Footprint">Mlab_D:LED_1206_mill</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
       </fields>
       <libsource lib="Device" part="LED" description="Light emitting diode"/>
       <property name="UST_ID" value="5c70984412875079b91f8895"/>
       <property name="Sheetname" value=""/>
       <property name="Sheetfile" value="TFHT01.kicad_sch"/>
-      <property name="ki_description" value="Light emitting diode"/>
       <property name="ki_keywords" value="LED diode"/>
+      <property name="ki_fp_filters" value="LED* LED_SMD:* LED_THT:*"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamps>963f39b7-38a1-44ed-ac4a-2637ad91de92</tstamps>
     </comp>
@@ -117,109 +136,152 @@
       <footprint>Mlab_D:LED_1206_mill</footprint>
       <fields>
         <field name="UST_ID">5c70984412875079b91f8896</field>
+        <field name="Footprint">Mlab_D:LED_1206_mill</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
       </fields>
       <libsource lib="Device" part="LED" description="Light emitting diode"/>
       <property name="UST_ID" value="5c70984412875079b91f8896"/>
       <property name="Sheetname" value=""/>
       <property name="Sheetfile" value="TFHT01.kicad_sch"/>
-      <property name="ki_description" value="Light emitting diode"/>
       <property name="ki_keywords" value="LED diode"/>
+      <property name="ki_fp_filters" value="LED* LED_SMD:* LED_THT:*"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamps>a12baf4f-c76b-4f3a-9cc1-adf92484af3f</tstamps>
     </comp>
     <comp ref="H1">
       <value>Heat insulation</value>
       <footprint>Mlab_Mechanical:MountingHole_1mm</footprint>
+      <fields>
+        <field name="Footprint">Mlab_Mechanical:MountingHole_1mm</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
       <libsource lib="Mechanical" part="MountingHole" description="Mounting Hole without connection"/>
       <property name="Sheetname" value=""/>
       <property name="Sheetfile" value="TFHT01.kicad_sch"/>
       <property name="exclude_from_bom"/>
-      <property name="ki_description" value="Mounting Hole without connection"/>
       <property name="ki_keywords" value="mounting hole"/>
+      <property name="ki_fp_filters" value="MountingHole*"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamps>56801e6d-c4ab-4f7b-8289-2119a52fa227</tstamps>
     </comp>
     <comp ref="H2">
       <value>Heat insulation</value>
       <footprint>Mlab_Mechanical:MountingHole_1mm</footprint>
+      <fields>
+        <field name="Footprint">Mlab_Mechanical:MountingHole_1mm</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
       <libsource lib="Mechanical" part="MountingHole" description="Mounting Hole without connection"/>
       <property name="Sheetname" value=""/>
       <property name="Sheetfile" value="TFHT01.kicad_sch"/>
       <property name="exclude_from_bom"/>
-      <property name="ki_description" value="Mounting Hole without connection"/>
       <property name="ki_keywords" value="mounting hole"/>
+      <property name="ki_fp_filters" value="MountingHole*"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamps>33ab3c40-672b-4aba-b37a-c0cccd048822</tstamps>
     </comp>
     <comp ref="H3">
       <value>Heat insulation</value>
       <footprint>Mlab_Mechanical:MountingHole_1mm</footprint>
+      <fields>
+        <field name="Footprint">Mlab_Mechanical:MountingHole_1mm</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
       <libsource lib="Mechanical" part="MountingHole" description="Mounting Hole without connection"/>
       <property name="Sheetname" value=""/>
       <property name="Sheetfile" value="TFHT01.kicad_sch"/>
       <property name="exclude_from_bom"/>
-      <property name="ki_description" value="Mounting Hole without connection"/>
       <property name="ki_keywords" value="mounting hole"/>
+      <property name="ki_fp_filters" value="MountingHole*"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamps>54b9d44f-1643-4921-8e3b-2c03405448a7</tstamps>
     </comp>
     <comp ref="H4">
       <value>Heat insulation</value>
       <footprint>Mlab_Mechanical:MountingHole_1mm</footprint>
+      <fields>
+        <field name="Footprint">Mlab_Mechanical:MountingHole_1mm</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
       <libsource lib="Mechanical" part="MountingHole" description="Mounting Hole without connection"/>
       <property name="Sheetname" value=""/>
       <property name="Sheetfile" value="TFHT01.kicad_sch"/>
       <property name="exclude_from_bom"/>
-      <property name="ki_description" value="Mounting Hole without connection"/>
       <property name="ki_keywords" value="mounting hole"/>
+      <property name="ki_fp_filters" value="MountingHole*"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamps>66b7b3b0-00bb-4640-87b4-6fd813d90142</tstamps>
     </comp>
     <comp ref="H5">
       <value>Heat insulation</value>
       <footprint>Mlab_Mechanical:MountingHole_1mm</footprint>
+      <fields>
+        <field name="Footprint">Mlab_Mechanical:MountingHole_1mm</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
       <libsource lib="Mechanical" part="MountingHole" description="Mounting Hole without connection"/>
       <property name="Sheetname" value=""/>
       <property name="Sheetfile" value="TFHT01.kicad_sch"/>
       <property name="exclude_from_bom"/>
-      <property name="ki_description" value="Mounting Hole without connection"/>
       <property name="ki_keywords" value="mounting hole"/>
+      <property name="ki_fp_filters" value="MountingHole*"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamps>527e455b-af88-4480-a309-b95af91d418d</tstamps>
     </comp>
     <comp ref="H6">
       <value>Heat insulation</value>
       <footprint>Mlab_Mechanical:MountingHole_1mm</footprint>
+      <fields>
+        <field name="Footprint">Mlab_Mechanical:MountingHole_1mm</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
       <libsource lib="Mechanical" part="MountingHole" description="Mounting Hole without connection"/>
       <property name="Sheetname" value=""/>
       <property name="Sheetfile" value="TFHT01.kicad_sch"/>
       <property name="exclude_from_bom"/>
-      <property name="ki_description" value="Mounting Hole without connection"/>
       <property name="ki_keywords" value="mounting hole"/>
+      <property name="ki_fp_filters" value="MountingHole*"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamps>e284e302-c864-4fd6-8274-277067e3e751</tstamps>
     </comp>
     <comp ref="H7">
       <value>Heat insulation</value>
       <footprint>Mlab_Mechanical:MountingHole_1mm</footprint>
+      <fields>
+        <field name="Footprint">Mlab_Mechanical:MountingHole_1mm</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
       <libsource lib="Mechanical" part="MountingHole" description="Mounting Hole without connection"/>
       <property name="Sheetname" value=""/>
       <property name="Sheetfile" value="TFHT01.kicad_sch"/>
       <property name="exclude_from_bom"/>
-      <property name="ki_description" value="Mounting Hole without connection"/>
       <property name="ki_keywords" value="mounting hole"/>
+      <property name="ki_fp_filters" value="MountingHole*"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamps>95c42dfd-70f7-42d3-a193-57443d6c7a23</tstamps>
     </comp>
     <comp ref="H8">
       <value>Heat insulation</value>
       <footprint>Mlab_Mechanical:MountingHole_1mm</footprint>
+      <fields>
+        <field name="Footprint">Mlab_Mechanical:MountingHole_1mm</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
       <libsource lib="Mechanical" part="MountingHole" description="Mounting Hole without connection"/>
       <property name="Sheetname" value=""/>
       <property name="Sheetfile" value="TFHT01.kicad_sch"/>
       <property name="exclude_from_bom"/>
-      <property name="ki_description" value="Mounting Hole without connection"/>
       <property name="ki_keywords" value="mounting hole"/>
+      <property name="ki_fp_filters" value="MountingHole*"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamps>ecef95bd-537f-4460-ab6e-2369f45e7445</tstamps>
     </comp>
@@ -227,7 +289,11 @@
       <value>SM04B-GHS-TB</value>
       <footprint>Connector_JST:JST_GH_SM04B-GHS-TB_1x04-1MP_P1.25mm_Horizontal</footprint>
       <fields>
+        <field name="UST_id"/>
         <field name="UST_ID">5c86273d1287500b4e0280be</field>
+        <field name="Footprint">Connector_JST:JST_GH_SM04B-GHS-TB_1x04-1MP_P1.25mm_Horizontal</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
       </fields>
       <libsource lib="MLAB_CONNECTORS_JST" part="SM04B-GHS-TB" description=""/>
       <property name="UST_id" value=""/>
@@ -241,7 +307,11 @@
       <value>SM04B-GHS-TB</value>
       <footprint>Connector_JST:JST_GH_SM04B-GHS-TB_1x04-1MP_P1.25mm_Horizontal</footprint>
       <fields>
+        <field name="UST_id"/>
         <field name="UST_ID">5c86273d1287500b4e0280be</field>
+        <field name="Footprint">Connector_JST:JST_GH_SM04B-GHS-TB_1x04-1MP_P1.25mm_Horizontal</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
       </fields>
       <libsource lib="MLAB_CONNECTORS_JST" part="SM04B-GHS-TB" description=""/>
       <property name="UST_id" value=""/>
@@ -254,18 +324,28 @@
     <comp ref="JP1">
       <value>Address select</value>
       <footprint>Jumper:SolderJumper-3_P1.3mm_Bridged12_RoundedPad1.0x1.5mm</footprint>
+      <fields>
+        <field name="Footprint">Jumper:SolderJumper-3_P1.3mm_Bridged12_RoundedPad1.0x1.5mm</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
       <libsource lib="Jumper" part="SolderJumper_3_Bridged12" description="3-pole Solder Jumper, pins 1+2 closed/bridged"/>
       <property name="Sheetname" value=""/>
       <property name="Sheetfile" value="TFHT01.kicad_sch"/>
       <property name="exclude_from_bom"/>
-      <property name="ki_description" value="3-pole Solder Jumper, pins 1+2 closed/bridged"/>
       <property name="ki_keywords" value="Solder Jumper SPDT"/>
+      <property name="ki_fp_filters" value="SolderJumper*Bridged12*"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamps>e1821fe1-099f-4ad8-b410-e79473e6d2c5</tstamps>
     </comp>
     <comp ref="M1">
       <value>M3</value>
       <footprint>Mlab_Mechanical:dira_3mm</footprint>
+      <fields>
+        <field name="Footprint">Mlab_Mechanical:dira_3mm</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
       <libsource lib="MLAB_MECHANICAL" part="HOLE" description=""/>
       <property name="Sheetname" value=""/>
       <property name="Sheetfile" value="TFHT01.kicad_sch"/>
@@ -277,6 +357,11 @@
     <comp ref="M2">
       <value>M3</value>
       <footprint>Mlab_Mechanical:dira_3mm</footprint>
+      <fields>
+        <field name="Footprint">Mlab_Mechanical:dira_3mm</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
       <libsource lib="MLAB_MECHANICAL" part="HOLE" description=""/>
       <property name="Sheetname" value=""/>
       <property name="Sheetfile" value="TFHT01.kicad_sch"/>
@@ -288,6 +373,11 @@
     <comp ref="M3">
       <value>M3</value>
       <footprint>Mlab_Mechanical:dira_3mm</footprint>
+      <fields>
+        <field name="Footprint">Mlab_Mechanical:dira_3mm</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
       <libsource lib="MLAB_MECHANICAL" part="HOLE" description=""/>
       <property name="Sheetname" value=""/>
       <property name="Sheetfile" value="TFHT01.kicad_sch"/>
@@ -299,6 +389,11 @@
     <comp ref="M4">
       <value>M3</value>
       <footprint>Mlab_Mechanical:dira_3mm</footprint>
+      <fields>
+        <field name="Footprint">Mlab_Mechanical:dira_3mm</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
       <libsource lib="MLAB_MECHANICAL" part="HOLE" description=""/>
       <property name="Sheetname" value=""/>
       <property name="Sheetfile" value="TFHT01.kicad_sch"/>
@@ -310,6 +405,11 @@
     <comp ref="M5">
       <value>M3</value>
       <footprint>Mlab_Mechanical:dira_3mm</footprint>
+      <fields>
+        <field name="Footprint">Mlab_Mechanical:dira_3mm</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
       <libsource lib="MLAB_MECHANICAL" part="HOLE" description=""/>
       <property name="Sheetname" value=""/>
       <property name="Sheetfile" value="TFHT01.kicad_sch"/>
@@ -321,6 +421,11 @@
     <comp ref="M6">
       <value>M3</value>
       <footprint>Mlab_Mechanical:dira_3mm</footprint>
+      <fields>
+        <field name="Footprint">Mlab_Mechanical:dira_3mm</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
       <libsource lib="MLAB_MECHANICAL" part="HOLE" description=""/>
       <property name="Sheetname" value=""/>
       <property name="Sheetfile" value="TFHT01.kicad_sch"/>
@@ -332,6 +437,11 @@
     <comp ref="M7">
       <value>CAP-SF2</value>
       <footprint>Mlab_Mechanical:CAP-SF2</footprint>
+      <fields>
+        <field name="Footprint">Mlab_Mechanical:CAP-SF2</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
       <libsource lib="MLAB_MECHANICAL" part="CAP-SF2" description=""/>
       <property name="Sheetname" value=""/>
       <property name="Sheetfile" value="TFHT01.kicad_sch"/>
@@ -344,13 +454,16 @@
       <datasheet>http://www.fairchildsemi.com/ds/BC/BC817.pdf</datasheet>
       <fields>
         <field name="UST_ID">5c70984712875079b91f8aec</field>
+        <field name="Footprint">Package_TO_SOT_SMD:SOT-23</field>
+        <field name="Datasheet">http://www.fairchildsemi.com/ds/BC/BC817.pdf</field>
+        <field name="Description"/>
       </fields>
       <libsource lib="Transistor_BJT" part="BC817" description="0.8A Ic, 45V Vce, NPN Transistor, SOT-23"/>
       <property name="UST_ID" value="5c70984712875079b91f8aec"/>
       <property name="Sheetname" value=""/>
       <property name="Sheetfile" value="TFHT01.kicad_sch"/>
-      <property name="ki_description" value="0.8A Ic, 45V Vce, NPN Transistor, SOT-23"/>
       <property name="ki_keywords" value="NPN Transistor"/>
+      <property name="ki_fp_filters" value="SOT?23*"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamps>06c6d896-7944-48b1-89fa-7f92f8e916db</tstamps>
     </comp>
@@ -359,13 +472,16 @@
       <footprint>Mlab_R:SMD-0603</footprint>
       <fields>
         <field name="UST_ID">5c70984512875079b91f8957</field>
+        <field name="Footprint">Mlab_R:SMD-0603</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
       </fields>
       <libsource lib="Device" part="R" description="Resistor"/>
       <property name="UST_ID" value="5c70984512875079b91f8957"/>
       <property name="Sheetname" value=""/>
       <property name="Sheetfile" value="TFHT01.kicad_sch"/>
-      <property name="ki_description" value="Resistor"/>
       <property name="ki_keywords" value="R res resistor"/>
+      <property name="ki_fp_filters" value="R_*"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamps>7d9ac06d-0387-49a1-8365-e9ad3541803c</tstamps>
     </comp>
@@ -374,13 +490,16 @@
       <footprint>Mlab_R:SMD-0603</footprint>
       <fields>
         <field name="UST_ID">5c70984512875079b91f8962</field>
+        <field name="Footprint">Mlab_R:SMD-0603</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
       </fields>
       <libsource lib="Device" part="R" description="Resistor"/>
       <property name="UST_ID" value="5c70984512875079b91f8962"/>
       <property name="Sheetname" value=""/>
       <property name="Sheetfile" value="TFHT01.kicad_sch"/>
-      <property name="ki_description" value="Resistor"/>
       <property name="ki_keywords" value="R res resistor"/>
+      <property name="ki_fp_filters" value="R_*"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamps>5ca4b185-b50a-4c7e-b3f2-4d48fda4441d</tstamps>
     </comp>
@@ -389,13 +508,16 @@
       <footprint>Mlab_R:SMD-0603</footprint>
       <fields>
         <field name="UST_ID">5c70984512875079b91f8962</field>
+        <field name="Footprint">Mlab_R:SMD-0603</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
       </fields>
       <libsource lib="Device" part="R" description="Resistor"/>
       <property name="UST_ID" value="5c70984512875079b91f8962"/>
       <property name="Sheetname" value=""/>
       <property name="Sheetfile" value="TFHT01.kicad_sch"/>
-      <property name="ki_description" value="Resistor"/>
       <property name="ki_keywords" value="R res resistor"/>
+      <property name="ki_fp_filters" value="R_*"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamps>00000000-0000-0000-0000-000059ffb143</tstamps>
     </comp>
@@ -404,13 +526,16 @@
       <footprint>Mlab_R:SMD-0603</footprint>
       <fields>
         <field name="UST_ID">5c70984512875079b91f8957</field>
+        <field name="Footprint">Mlab_R:SMD-0603</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
       </fields>
       <libsource lib="Device" part="R" description="Resistor"/>
       <property name="UST_ID" value="5c70984512875079b91f8957"/>
       <property name="Sheetname" value=""/>
       <property name="Sheetfile" value="TFHT01.kicad_sch"/>
-      <property name="ki_description" value="Resistor"/>
       <property name="ki_keywords" value="R res resistor"/>
+      <property name="ki_fp_filters" value="R_*"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamps>49ca790a-7c85-40e9-b710-e24c90dea24f</tstamps>
     </comp>
@@ -419,13 +544,16 @@
       <footprint>Mlab_R:SMD-0603</footprint>
       <fields>
         <field name="UST_ID">5c70984512875079b91f8962</field>
+        <field name="Footprint">Mlab_R:SMD-0603</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
       </fields>
       <libsource lib="Device" part="R" description="Resistor"/>
       <property name="UST_ID" value="5c70984512875079b91f8962"/>
       <property name="Sheetname" value=""/>
       <property name="Sheetfile" value="TFHT01.kicad_sch"/>
-      <property name="ki_description" value="Resistor"/>
       <property name="ki_keywords" value="R res resistor"/>
+      <property name="ki_fp_filters" value="R_*"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamps>00000000-0000-0000-0000-000059ffb1aa</tstamps>
     </comp>
@@ -435,13 +563,16 @@
       <datasheet>https://www.sensirion.com/fileadmin/user_upload/customers/sensirion/Dokumente/2_Humidity_Sensors/Datasheets/Sensirion_Humidity_Sensors_SHT3xA_Datasheet.pdf</datasheet>
       <fields>
         <field name="UST_ID">65103c42462c6d9e72054b8e</field>
+        <field name="Footprint">Sensor_Humidity:Sensirion_DFN-8-1EP_2.5x2.5mm_P0.5mm_EP1.1x1.7mm</field>
+        <field name="Datasheet">https://www.sensirion.com/fileadmin/user_upload/customers/sensirion/Dokumente/2_Humidity_Sensors/Datasheets/Sensirion_Humidity_Sensors_SHT3xA_Datasheet.pdf</field>
+        <field name="Description"/>
       </fields>
       <libsource lib="Sensor_Humidity" part="SHT35A-DIS" description="I²C humidity and temperature sensor, ±1.5%RH, ±0.2°C, AEQ-100, DFN-8"/>
       <property name="UST_ID" value="65103c42462c6d9e72054b8e"/>
       <property name="Sheetname" value=""/>
       <property name="Sheetfile" value="TFHT01.kicad_sch"/>
-      <property name="ki_description" value="I²C humidity and temperature sensor, ±1.5%RH, ±0.2°C, AEQ-100, DFN-8"/>
       <property name="ki_keywords" value="digital temperature humidity automotive i2c"/>
+      <property name="ki_fp_filters" value="Sensirion*DFN*1EP*2.5x2.5mm*P0.5mm*"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamps>a7805256-ab76-4b69-8748-d5f6cd3c727a</tstamps>
     </comp>
@@ -451,13 +582,16 @@
       <datasheet>http://ww1.microchip.com/downloads/en/DeviceDoc/MIC550X.pdf</datasheet>
       <fields>
         <field name="UST_ID">5c7255e81287500b4e112ea2</field>
+        <field name="Footprint">Package_TO_SOT_SMD:SOT-23-5</field>
+        <field name="Datasheet">http://ww1.microchip.com/downloads/en/DeviceDoc/MIC550X.pdf</field>
+        <field name="Description"/>
       </fields>
       <libsource lib="Regulator_Linear" part="MIC5504-3.3YM5" description="300mA Low-dropout Voltage Regulator, Vout 3.3V, Vin up to 5.5V, SOT-23"/>
       <property name="UST_ID" value="5c7255e81287500b4e112ea2"/>
       <property name="Sheetname" value=""/>
       <property name="Sheetfile" value="TFHT01.kicad_sch"/>
-      <property name="ki_description" value="300mA Low-dropout Voltage Regulator, Vout 3.3V, Vin up to 5.5V, SOT-23"/>
       <property name="ki_keywords" value="Micrel LDO voltage regulator"/>
+      <property name="ki_fp_filters" value="SOT?23?5*"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamps>00000000-0000-0000-0000-00005de928cf</tstamps>
     </comp>
@@ -472,7 +606,9 @@
       <fields>
         <field name="Reference">C</field>
         <field name="Value">C</field>
+        <field name="Footprint"/>
         <field name="Datasheet">~</field>
+        <field name="Description">Unpolarized capacitor</field>
       </fields>
       <pins>
         <pin num="1" name="" type="passive"/>
@@ -490,7 +626,9 @@
       <fields>
         <field name="Reference">D</field>
         <field name="Value">LED</field>
+        <field name="Footprint"/>
         <field name="Datasheet">~</field>
+        <field name="Description">Light emitting diode</field>
       </fields>
       <pins>
         <pin num="1" name="K" type="passive"/>
@@ -506,7 +644,9 @@
       <fields>
         <field name="Reference">R</field>
         <field name="Value">R</field>
+        <field name="Footprint"/>
         <field name="Datasheet">~</field>
+        <field name="Description">Resistor</field>
       </fields>
       <pins>
         <pin num="1" name="" type="passive"/>
@@ -522,7 +662,9 @@
       <fields>
         <field name="Reference">JP</field>
         <field name="Value">SolderJumper_3_Bridged12</field>
+        <field name="Footprint"/>
         <field name="Datasheet">~</field>
+        <field name="Description">3-pole Solder Jumper, pins 1+2 closed/bridged</field>
       </fields>
       <pins>
         <pin num="1" name="A" type="passive"/>
@@ -535,6 +677,8 @@
         <field name="Reference">J</field>
         <field name="Value">SM04B-GHS-TB</field>
         <field name="Footprint">Connector_JST:JST_GH_SM04B-GHS-TB_1x04-1MP_P1.25mm_Horizontal</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
       </fields>
       <pins>
         <pin num="1" name="" type="input"/>
@@ -553,6 +697,9 @@
       <fields>
         <field name="Reference">D</field>
         <field name="Value">D_ZENER</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
       </fields>
       <pins>
         <pin num="1" name="K" type="passive"/>
@@ -564,12 +711,17 @@
         <field name="Reference">M</field>
         <field name="Value">CAP-SF2</field>
         <field name="Footprint">Mlab_Mechanical:CAP-SF2</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
       </fields>
     </libpart>
     <libpart lib="MLAB_MECHANICAL" part="HOLE">
       <fields>
         <field name="Reference">M</field>
         <field name="Value">HOLE</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
       </fields>
       <pins>
         <pin num="1" name="" type="input"/>
@@ -584,7 +736,9 @@
       <fields>
         <field name="Reference">H</field>
         <field name="Value">MountingHole</field>
+        <field name="Footprint"/>
         <field name="Datasheet">~</field>
+        <field name="Description">Mounting Hole without connection</field>
       </fields>
     </libpart>
     <libpart lib="Regulator_Linear" part="MIC5504-3.3YM5">
@@ -598,6 +752,7 @@
         <field name="Value">MIC5504-3.3YM5</field>
         <field name="Footprint">Package_TO_SOT_SMD:SOT-23-5</field>
         <field name="Datasheet">http://ww1.microchip.com/downloads/en/DeviceDoc/MIC550X.pdf</field>
+        <field name="Description">300mA Low-dropout Voltage Regulator, Vout 3.3V, Vin up to 5.5V, SOT-23</field>
       </fields>
       <pins>
         <pin num="1" name="VIN" type="power_in"/>
@@ -618,6 +773,7 @@
         <field name="Value">SHT35A-DIS</field>
         <field name="Footprint">Sensor_Humidity:Sensirion_DFN-8-1EP_2.5x2.5mm_P0.5mm_EP1.1x1.7mm</field>
         <field name="Datasheet">https://www.sensirion.com/fileadmin/user_upload/customers/sensirion/Dokumente/2_Humidity_Sensors/Datasheets/Sensirion_Humidity_Sensors_SHT3xA_Datasheet.pdf</field>
+        <field name="Description">I²C humidity and temperature sensor, ±1.5%RH, ±0.2°C, AEQ-100, DFN-8</field>
       </fields>
       <pins>
         <pin num="1" name="SDA" type="bidirectional"/>
@@ -642,6 +798,7 @@
         <field name="Value">BC817</field>
         <field name="Footprint">Package_TO_SOT_SMD:SOT-23</field>
         <field name="Datasheet">https://www.onsemi.com/pub/Collateral/BC818-D.pdf</field>
+        <field name="Description">0.8A Ic, 45V Vce, NPN Transistor, SOT-23</field>
       </fields>
       <pins>
         <pin num="1" name="B" type="input"/>
