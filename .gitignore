@@ -1,5 +1,6 @@
 
 *~
+*.000
 _autosave-*
 *auto_saved_files#
 *backup*
@@ -16,7 +17,6 @@ fp-info-cache
 *.orig
 *-save.kicad_pcb
 *-save.pro
-*.ses
 *.sch-bak
+*.ses
 *.tmp
-*.000
